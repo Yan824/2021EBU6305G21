@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul,li{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .background1{
+            height: 150px;
+            /* border-color: green; */
+            /* border-style: solid; */
+            background-image: url("img/school\ name1.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .background2{
+            height: 600px;
+            padding: 0;
+            margin: 0;
+            /* border-color: rgb(255, 225, 225);   */
+            /* border-style: solid;   */
+            background-image: url("img/Building.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .background3{
+            height: 100px;
+            /* border-color: blue; */
+            /* border-style: solid; */
+            background-image: url("img/school\ name.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+       .box-1{
+            float: left;
+            width: 800px;
+            height: 500px;
+            margin: 50px auto; 
+             overflow: hidden;   
+            position: relative;
+             border-color: purple; 
+            border-style: solid; 
+        } 
+        /* .box-1 ul li{
+            border-color: rgb(146, 84, 232); 
+             border-style: solid; 
+	        width: 800px;
+	        height: 450px;
+	        position: relative; 
+	         overflow: hidden; 
+        } */
+
+        .imageList{
+            
+            /* border-color: rgb(84, 222, 232); 
+            border-style: solid; 
+	        display:flex; 
+	        width: 800px; 
+	        height: 450px; */
+            display: flex;
+            position: relative;
+            /* left: 0px; */
+            width: 800px;
+            height: 450px;
+            transition: 0.5s ease;
+        }
+        .imageList img{
+            display:block;  
+	        width: 800px; 
+	        height: 450px;
+            /* transition: 0.5s ease; */
+        }
+
+        .box-1 h2{
+	        /* position: absolute; */
+            margin: 0;
+	        left: 0;
+	        bottom: 0;
+            height: 50px;
+	        width:300px;
+	        background: rgba(248, 251, 254, 0.764);
+	        text-indent: 2em;
+	        padding-right:500px ;
+	        font-size: 15px;
+	        line-height: 40px;
+	        text-overflow: ellipsis;
+	        overflow: hidden;
+	        white-space: nowrap;
+	        font-weight: normal;
+	        color: rgb(18, 18, 18)
+        } 
+       .box-2{
+            float: left;
+            margin: 50px;
+            width: 200px;
+            height: 500px;
+            background-color: rgba(117, 114, 114, 0.61);
+        }
+        .box-3{
+            float: left;
+            width: 250px;
+            margin: 50px;
+            height: 500px;
+            background-color: rgba(117, 114, 114, 0.61);
+        } 
+        .box-1 a {
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            display: block;
+            width: 40px;
+            height: 70px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            user-select: none;
+            font-size: 30px;
+            text-align: center;
+            line-height: 70px;
+            text-decoration: none;
+        }
+        .schoolLogo{
+            display: block;
+            position: absolute;
+            left: 50px;
+            top: 70px;
+            background-image: url(""); 
+            background-repeat: no-repeat;
+            border-color: blue;
+            border-style: solid;
+            height: 120px;
+            width: 120px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="background1"></div>
+    <div class="schoolLogo">
+    </div>
+    <div class="background2">
+        <div class="box-2">
+            这里是左侧介绍栏
+        </div>
+        <div class="box-1">
+            <div class="imageList">
+                <ul>
+                    <li>
+                        <img src="img/photo1.png" alt="这里是第一场图片"></img>
+                        <h2>这里是第一张图片这里是第一张图片</h2>
+                    </li>
+                    <li>
+                        <img src="img/photo2.png" alt="这里是第二张图片"></img>
+                        <h2>这里是第二张图片这里是第二张图片</h2>
+                    </li>
+                    <li>
+                        <img src="img/photo3.png" alt="这里是第三张图片"></img>
+                        <h2>这里是第三张图片这里是第三张图片</h2>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="arrow">
+                <a href="javascript:;" class="left" style="left: 0;"><</a>
+                <a href="javascript:;" class="right" style="right: 0;">></a>
+            </div>
+        </div>
+        
+        
+        <div class="box-3">
+            <img src="img/Jiang.jpeg" style="width: 140px;height: 200px; margin: 10px 55px ;"/>
+            <div style="margin-top:15px;margin-left: 15px;margin-right: 15px;
+            background-color: rgba(248, 251, 254, 0.764);
+            height: 250px;">
+                The famous educator<br> <span style="font-weight:bold">Jiang Menglin (1886-1964)</span>, 
+                also known by his courtesy name (zi) Zhaoxian and 
+                pseudonym (hao) Menglin, was formerly named Mengxiong. 
+                He was born in Yuyao, Zhejiang Province...
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="background3"></div>
+
+    <script>  
+        let oLeft = document.querySelector(".left");
+        let oRight = document.querySelector(".right");
+        let oImgList = document.querySelector(".imageList");
+
+        // let clonefirstImg = oImgList.firstElementChild.cloneNode();
+        // oImgList.appendChild(clonefirstImg);
+        let index = 0;
+        oRight.addEventListener("click",() =>{
+            index++;
+            oImgList.style.top = index*(-500) + "px" ;
+            oImgList.style.transition = "0.5s ease";
+            if(index >= 3){
+                index = 0 ;
+                oImgList.style.top = index*(-500) + "px" ;
+             }
+        
+        })
+
+        oLeft.addEventListener("click",() =>{
+            index--;
+            if(index <= -1){
+                oImgList.style.top = index*-500 + "px" ;
+                index = 2 ;
+             }
+             oImgList.style.top = index*(-500) + "px" ;
+        
+        })
+    </script>
+    
+    
+</body>
+</html>
