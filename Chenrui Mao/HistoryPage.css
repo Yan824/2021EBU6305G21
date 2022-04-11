@@ -1,3 +1,45 @@
+.menu{
+    width: 100%;
+	height: 70px;
+    font-size: 36px;
+}
+.menu ul{
+    width: 100%;
+    height: 80%;
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding:4px 8px;
+}
+.menu ul li{
+    display: inline;
+    float: left;
+    clear: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    height: 100%;
+}
+.menu ul li:hover a,
+.menu ul li a{
+    width: 100%;
+    height: 100%;
+	display: block;
+	background:rgb(132, 132, 253);
+    display: inline;
+    padding: 0 6px 0 0;
+    float: left;
+    text-transform: lowercase;
+    color:white;
+    text-decoration: none;
+}
+.menu li:hover ul li a:hover,
+.menu ul li a:hover{
+    height: 100%;
+    background:rgb(135, 235, 135);
+    color: #000;
+}
+
 .navigation{
 	width: 100%;
 	height: 35px;
@@ -9,7 +51,6 @@
     margin: 0;
     padding:4px 8px;
 }
-
 .navigation ul li{
     display: inline;
     float: left;
@@ -19,12 +60,11 @@
     width: 10%;
     height: auto;
 }
-
 .navigation ul li:hover a,
 .navigation ul li a{
     width: 100%;
 	display: block;
-	background:blue;
+	background:rgb(142, 142, 241);
     display: inline;
     padding: 0 6px 0 0;
     float: left;
@@ -34,10 +74,9 @@
 }
 .navigation li:hover ul li a:hover,
 .navigation ul li a:hover{
-    background:green;
+    background:rgb(154, 230, 154);
     color: #000;
 }
-
 
 .figurenav{
     width: 100%;
@@ -61,7 +100,7 @@
     opacity: 0;
     color: white;
     transition: all 0.5s ease-in-out;
-    background-color: aqua;
+    background-color: rgb(146, 240, 240);
     z-index: 0;
 }
 .view:hover .mask{
@@ -91,7 +130,7 @@
     transform: scale(1.1);
 }
 .main{
-    height: 820px;
+    height: 1000px;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -100,13 +139,24 @@
     height: 30px;
     border: none;
     position: relative;
-    left: 67%;
+    left: 64%;
     top: 35%;
     background: url(img/Button.png); 
     background-size:contain;
     background-repeat: no-repeat;
 }
 
+#YunNan{
+    width: 30px;
+    height: 30px;
+    border: none;
+    position: relative;
+    left: 41%;
+    top: 74%;
+    background: url(img/Button.png); 
+    background-size:contain;
+    background-repeat: no-repeat;
+}
 button:active{
     box-shadow: 0 5px #666;
     transform: translateY(4px);
