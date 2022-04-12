@@ -9,7 +9,21 @@
 
 	
 <body>
-     /*style="background: url(img/bg.png); background-repeat: no-repeat;background-size: 100% 100%;"/*
+    <script>
+		function displayWindowB() {
+			document.getElementById("Beijinginfo").style.opacity = "1";
+		}
+		function hideWindowB() {
+			document.getElementById("Beijinginfo").style.opacity = "0";
+		}
+        function displayWindowY() {
+			document.getElementById("YunNaninfo").style.opacity = "1";
+		}
+		function hideWindowY() {
+			document.getElementById("YunNaninfo").style.opacity = "0";
+		}
+	</script>
+
         <div class="menu">
             <ul>
                 <li><a href="Event.html">LXY</a></li>
@@ -55,8 +69,21 @@
         </div>
         <br>
         <div class="main" style = "background-image: url(img/Zhongguo.png);background-size: 75% 100%;">
-            <button id="Beijing"></button>
-            <button id="YunNan"></button>
+            <button id="Beijing" onclick="displayWindowB()"></button>
+            <button id="YunNan" onclick="displayWindowY()"></button>
+            <div id="Beijinginfo">
+                <button class="close" onclick="hideWindowB()"></button>
+                <br>
+                <p>111</p>
+            <a class="jump" href="#">Click to see more</a>
+            </div>
+            <div id="YunNaninfo">
+                <button class="close" onclick="hideWindowY()"></button>
+                <br>
+                <p>111</p>
+                <a class="jump" href="#">Click to see more</a>
+            </div>
+            
         </div>
 </body>
 </html>

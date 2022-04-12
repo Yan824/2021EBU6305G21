@@ -135,8 +135,8 @@
     background-position: center;
 }
 #Beijing{
-    width: 30px;
-    height: 30px;
+    width: 3%;
+    height: 3%;
     border: none;
     position: relative;
     left: 64%;
@@ -145,18 +145,62 @@
     background-size:contain;
     background-repeat: no-repeat;
 }
-
-#YunNan{
-    width: 30px;
-    height: 30px;
+#Beijinginfo{
+    margin: 0;
+    width: 20%;
+    height: 20%;
     border: none;
     position: relative;
+    left: 64%;
+    top: 35%;
+    padding: 0;
+    opacity: 0;
+    background-color: rgb(110, 249, 249);
+}
+
+#YunNan{
+    width: 3%;
+    height: 3%;
+    border: none;
+    position: relative;
+    padding: 0;
     left: 41%;
     top: 74%;
     background: url(img/Button.png); 
     background-size:contain;
     background-repeat: no-repeat;
 }
+#YunNaninfo{
+    margin: 0;
+    width: 20%;
+    height: 20%;
+    border: none;
+    position: relative;
+    left: 44%;
+    top: 54%;
+    opacity: 0;
+    background-color: rgb(110, 249, 249);
+}
+.jump{
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+.close{
+    height: 10%;
+    position: absolute;
+    top: 0;
+    width: 10%;
+    left: 90%;
+    text-align: center;
+    background-image: url(img/exit.jfif);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
 button:active{
     box-shadow: 0 5px #666;
     transform: translateY(4px);
@@ -164,3 +208,4 @@ button:active{
 button:focus{
  outline:none;
 }
+
