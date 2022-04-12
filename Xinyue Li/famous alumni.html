@@ -6,13 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            margin-top: 0;
+        }
         ul,li{
             list-style: none;
             padding: 0;
             margin: 0;
         }
+        .menubar{
+            margin: 0;
+            padding: 0;
+            /* background-color: rgb(172, 128, 69); */
+        }
+        .menubar ul{
+            padding: 0;
+            margin: 0;
+            position: relative;
+            display: flex;
+            height: 45px;
+            line-height: 45px;
+            background-color: rgba(149, 141, 133, 0.763);
+        }
+        .menubar li{
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            z-index: 3;
+            list-style: none;
+            width: 25%;
+            text-align: center;
+            border-radius: 10px;
+            color: rgb(255, 255, 255);
+        }
+        .menubar li a{
+            color: aliceblue;
+            text-decoration: none;
+        }
+
+        .menubar li a :hover{
+            color: aquamarine;
+        }
+        .admin{
+            z-index: 1;
+            height: 45px;
+            position: absolute;
+            left: 52.5%;
+            top: 0;
+            width: 20%;
+            background-color: rgba(203, 203, 241, 0.51);
+        }
         .background1{
-            height: 150px;
+            top: 45px;
+            height: 120px;
             /* border-color: green; */
             /* border-style: solid; */
             background-image: url("img/school\ name1.png");
@@ -44,17 +89,9 @@
             margin: 50px auto; 
              overflow: hidden;   
             position: relative;
-             border-color: purple; 
-            border-style: solid; 
+            /* border-color: purple;  */
+            /* border-style: solid;  */
         } 
-        /* .box-1 ul li{
-            border-color: rgb(146, 84, 232); 
-             border-style: solid; 
-	        width: 800px;
-	        height: 450px;
-	        position: relative; 
-	         overflow: hidden; 
-        } */
 
         .imageList{
             
@@ -125,43 +162,109 @@
             text-decoration: none;
         }
         .schoolLogo{
+            z-index: 3;
             display: block;
             position: absolute;
             left: 50px;
             top: 70px;
-            background-image: url(""); 
+            background-color: rgba(240, 248, 255, 0.626);
+            background-image: url("img/SchoolLog.png"); 
             background-repeat: no-repeat;
-            border-color: blue;
-            border-style: solid;
+            /* border-color: blue; */
+            /* border-style: solid; */
             height: 120px;
             width: 120px;
+        }
+        .schoolName{
+            z-index: 3;
+            padding: 0;
+            margin: 0;
+            top: 70px;
+            left: 170px;
+            height: 40px;
+            width: 23%;
+            line-height: 40px;
+            position: absolute;
+            font-family: "Microsoft Yahei";
+            color: rgb(43, 47, 76);
+            font-weight: bold;
+            background-color: rgba(240, 248, 255, 0.626);  
+            /* border-bottom-color: rgb(159, 134, 134); */
+            /* border-bottom-style: solid; */
+        }
+        .bottom1{
+            z-index: 2;
+            padding: 0;
+            margin: 0;
+            top: 70px;
+            left: 170px;
+            height: 120px;
+            width: 30%;
+            background-color: rgba(159, 203, 241, 0.626);
+            position: absolute;
+
+        }
+        .title1{
+            z-index: 3;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: 110px;
+            left: 200px;
+            height: 80px;
+            width:28%;
+            text-align: center;
+            display: block;
+            background-color: rgba(240, 248, 255, 0.626);
+            font-family: "Microsoft Yahei";
+            font-weight: bold;
+            line-height: 80px;
+            font-size: 40px;
         }
         
 
     </style>
 </head>
 <body>
-    <div class="background1"></div>
+    <div class="menubar">
+        <ul>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Introduction</a></li>
+            <li><a href="#">Famous Alumni</a></li>
+            <li><a href="#">Related Works</a></li>
+            <div class="admin"></div>
+        </ul>
+    </div>
+    <div class="bottom1"></div>
+    <div class="schoolName">
+            National South-West Associated University
+    </div>
+    <div class="title1">
+        -Famous Alumni-
+    </div>
+    <div class="background1">
+        
+    </div>
     <div class="schoolLogo">
     </div>
     <div class="background2">
         <div class="box-2">
-            这里是左侧介绍栏
+            This part will show the brief Introduction about this school's students and Teachers.
         </div>
         <div class="box-1">
             <div class="imageList">
                 <ul>
                     <li>
-                        <img src="img/photo1.png" alt="这里是第一场图片"></img>
-                        <h2>这里是第一张图片这里是第一张图片</h2>
+                        <img src="img/photo1.png" alt="First Pictures"></img>
+                        <h2>This is the first picture here.</h2>
                     </li>
                     <li>
-                        <img src="img/photo2.png" alt="这里是第二张图片"></img>
-                        <h2>这里是第二张图片这里是第二张图片</h2>
+                        <img src="img/photo2.png" alt="Second Pictures"></img>
+                        <h2>This is the second picture here.</h2>
                     </li>
                     <li>
-                        <img src="img/photo3.png" alt="这里是第三张图片"></img>
-                        <h2>这里是第三张图片这里是第三张图片</h2>
+                        <img src="img/photo3.png" alt="Third Pictures"></img>
+                        <h2>This is the third picture here.</h2>
                     </li>
                 </ul>
             </div>
