@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0/>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>School Introduction</title>
+    <style>
+        .subtitle{
+        width: 100%;
+        height: 100px;
+        border-style: hidden;
+        font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;;
+        font-weight: bold;
+        color: black;
+        text-align: center;
+        font-size: 50px;
+        }
+        .background{
+            height: 600px;
+            background-image: url("img-zzy/bk1.jpeg");
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+        }
+        ul,li{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menubar{
+            margin: 0;
+            padding: 0;
+            /* background-color: rgb(172, 128, 69); */
+        }
+        .menubar ul{
+            padding: 0;
+            margin: 0;
+            position: relative;
+            display: flex;
+            height: 45px;
+            line-height: 45px;
+            background-color: rgba(149, 141, 133, 0.763);
+        }
+        .menubar ul li{
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            z-index: 3; 
+            list-style: none;
+            width: 20%;
+            text-align: center;
+            border-radius: 10px;
+            color: rgb(255, 255, 255);
+        }
+        .menubar ul li:hover a,
+        .menubar ul li a{
+            z-index: 3;
+            width: 100%;
+            height: 100%;
+            display: block;
+            color: aliceblue;
+            text-decoration: none;
+            display: block; 
+        }
+        .menubar li:hover ul li a:hover,
+        .menubar ul li a:hover{
+            height: 100%;
+            
+            background:rgba(182, 225, 220, 0.685);
+            /* color: #000; */
+        }
+        .admin{
+            z-index: 1;
+            height: 45px;
+            position: absolute;
+            left: 20%;
+            top: 0;
+            width: 20%;
+            background-color: rgba(203, 203, 241, 0.51);
+        }
+        .leftarrow{
+            background-image: url("img-zzy/leftarrow.png");
+            background-size:100% 100%;
+            height: 150px;
+            width: 300px;
+            position: absolute;
+            top: 82%;
+            left: 20%;
+            border-style: hidden;
+        }
+        .rightarrow{
+            background-image: url("img-zzy/rightarrow.png");
+            background-size:100% 100%;
+            height: 150px;
+            width: 300px;
+            position: absolute;
+            top: 82%;
+            left: 55%;
+            border-style: hidden;
+        }
+        #welcome{
+            height: 500px;
+            width: 400px;
+            position: absolute;
+            top: 40%;
+            left: 33%;
+            border-color: rgb(207, 236, 246);
+            text-align: center;
+            font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;;
+            font-weight: bold;
+            color: rgb(160, 184, 220);
+            font-size: 50px;
+            opacity: 1;
+        }
+        #scale{
+            background-image: url("img-zzy/scale.jpeg");
+            background-size:100% 100%;
+            height: 300px;
+            width: 400px;
+            position: absolute;
+            top: 38%;
+            left: 33%;
+            border-color: rgb(207, 236, 246);
+            text-align: center;
+            opacity: 0;
+        }
+        #spirits{
+            background-image: url("img-zzy/spirits.jpeg");
+            background-size:100% 100%;
+            height: 300px;
+            width: 400px;
+            position: absolute;
+            top: 38%;
+            left: 33%;
+            border-color: rgb(207, 236, 246);
+            text-align: center;
+            opacity: 0;
+        }
+        #regulations{
+            background-image: url("img-zzy/regulations.jpeg");
+            background-size:100% 100%;
+            height: 300px;
+            width: 400px;
+            position: absolute;
+            top: 38%;
+            left: 33%;
+            border-color: rgb(207, 236, 246);
+            text-align: center;
+            opacity: 0;
+        }
+        #achievements{
+            background-image: url("img-zzy/achievements.jpeg");
+            background-size:100% 100%;
+            height: 300px;
+            width: 400px;
+            position: absolute;
+            top: 38%;
+            left: 33%;
+            border-color: rgb(207, 236, 246);
+            text-align: center;
+            opacity: 0;
+        }
+        .box-1{
+            height: 400px;
+            width: 200px;
+            position: absolute;
+            left: 3%;
+            top: 20%;
+            border-style: hidden;
+        }
+        
+        .box-2{
+            height: 400px;
+            width: 200px;
+            position: absolute;
+            left: 76%;
+            top: 20%;
+            border-style: hidden;
+        }
+
+        .button{
+            height: 40px;
+            text-align: center;
+            margin: 100px;
+        }
+
+        button:active{
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+        }
+        button:focus{
+        outline:none;
+        }
+        ul li{
+        list-style:none;
+        }
+    </style>
+
+ 
+    </head>
+
+    <body>
+        <script> 
+            //显示悬浮层 
+            function showScale(){ 
+            document.getElementById("scale").style.opacity="1"; 
+            document.getElementById("welcome").style.opacity="0"; 
+            } 
+            //隐藏悬浮层 
+            function hiddenScale(){ 
+            document.getElementById("scale").style.opacity="0";
+            document.getElementById("welcome").style.opacity="1";
+            } 
+            function showSpirits(){ 
+            document.getElementById("spirits").style.opacity="1";
+            document.getElementById("welcome").style.opacity="0"; 
+            } 
+            function hiddenSpirits(){ 
+            document.getElementById("spirits").style.opacity="0";
+            document.getElementById("welcome").style.opacity="1";
+            } 
+            function showRegulations(){ 
+            document.getElementById("regulations").style.opacity="1";
+            document.getElementById("welcome").style.opacity="0";  
+            } 
+            function hiddenRegulations(){ 
+            document.getElementById("regulations").style.opacity="0"; 
+            document.getElementById("welcome").style.opacity="1";
+            }
+            function showAchievements(){ 
+            document.getElementById("achievements").style.opacity="1";
+            document.getElementById("welcome").style.opacity="0"; 
+            }
+            function hiddenAchievements(){ 
+            document.getElementById("achievements").style.opacity="0";
+            document.getElementById("welcome").style.opacity="1";
+            }
+           </script> 
+        <div class="background">
+            <div class="menubar">
+                <ul>
+                    <li><a href="Main_Page.html">Main Page</a></li>
+                    <li><a href="School_Introduction.html">School Introduction</a></li>
+                    <li><a href="HistoryPage.html">History</a></li>
+                    <li><a href="Famous alumni.html">Famous Alumni</a></li>
+                    <li><a href="related_work.html">Related Works</a></li>
+                    <div class="admin"></div>
+                </ul>
+            </div>
+            <div class="subtitle">
+                Introduction to
+            </div>
+            <div class="box-1">
+            <button class="button" onmouseover= "showScale()" onmouseout="hiddenScale()">Scale</button>
+            <button class="button" onmouseover= "showSpirits()" onmouseout="hiddenSpirits()">Spirits</button>
+            </div>
+            <div class="box-2">
+                <button class="button" onmouseover= "showRegulations()" onmouseout="hiddenRegulations()">Regulations</button>
+                <button class="button" onmouseover= "showAchievements()" onmouseout="hiddenAchievements()">Achievements</button>
+            </div>
+            <div id="scale">Click to get more about the scale!</div>
+            <div id="spirits">Click to get more about the spirits!</div>
+            <div id="regulations">Click to get more about the regulations!</div>
+            <div id="achievements">Click to get more about the achievements!</div>
+            <div id="welcome">Welcome to NSAU!<br>Choose what interests you!</div>
+            <div class="leftarrow"></div>
+            <div class="rightarrow"></div>
+        </div>
+    </body>
+
+</html>

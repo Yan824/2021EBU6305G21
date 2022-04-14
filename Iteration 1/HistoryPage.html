@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<title>History Page</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link type = "text/css" href = "HistoryPage.css" rel="stylesheet" />
+</head>
+
+	
+<body>
+    <script>
+		function displayWindowB() {
+			document.getElementById("Beijinginfo").style.opacity = "1";
+		}
+		function hideWindowB() {
+			document.getElementById("Beijinginfo").style.opacity = "0";
+		}
+        function displayWindowY() {
+			document.getElementById("YunNaninfo").style.opacity = "1";
+		}
+		function hideWindowY() {
+			document.getElementById("YunNaninfo").style.opacity = "0";
+		}
+	</script>
+
+    <div class="menubar">
+        <ul>
+            <li><a href="Main_Page.html">Main Page</a></li>
+            <li><a href="School_Introduction.html">School Introduction</a></li>
+            <li><a href="HistoryPage.html">History</a></li>
+            <li><a href="Famous alumni.html">Famous Alumni</a></li>
+            <li><a href="related_work.html">Related Works</a></li>
+            <div class="admin"></div>
+        </ul>
+    </div>
+    <br>
+        <div class="figurenav">
+            <ul>
+                <li class="view">
+                    <img src="img-mcr/Coming.jfif" alt="Intro"/>
+                    <a class="mask" href="Event.html">123</a>
+                </li>
+                <li class="view">
+                    <img src="img-mcr/Coming.jfif" alt="Intro"/>
+                    <a class="mask" href="Event.html">123</a>
+                </li>
+                <li class="view">
+                    <img src="img-mcr/Coming.jfif" alt="Intro"/>
+                    <a class="mask" href="Event.html">123</a>
+                </li>
+                <li class="view">
+                    <img src="img-mcr/Coming.jfif" alt="Intro"/>
+                    <a class="mask" href="Event.html">123</a>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div class="navigation">
+            <ul>
+                <li><a href="#">1935</a></li>
+                <li><a href="#">1936</a></li>
+                <li><a href="#">1937</a></li>
+                <li><a href="#">1938</a></li>
+                <li><a href="#">1939</a></li>
+                <li><a href="#">1940</a></li>
+                <li><a href="#">1941</a></li>
+                <li><a href="#">1942</a></li>
+                <li><a href="#">1943</a></li>
+                <li><a href="#">1944</a></li>
+                </ul>
+        </div>
+        <br>
+        <div class="main" style = "background-image: url(img-mcr/Zhongguo.png);background-size: 75% 100%;">
+            <button id="Beijing" onclick="displayWindowB()"></button>
+            <button id="YunNan" onclick="displayWindowY()"></button>
+            <div id="Beijinginfo">
+                <button class="close" onclick="hideWindowB()"></button>
+                <br>
+                <p>111</p>
+            <a class="jump" href="Event.html">Click to see more</a>
+            </div>
+            <div id="YunNaninfo">
+                <button class="close" onclick="hideWindowY()"></button>
+                <br>
+                <p>111</p>
+                <a class="jump" href="Event.html">Click to see more</a>
+            </div>
+            
+        </div>
+</body>
+</html>
