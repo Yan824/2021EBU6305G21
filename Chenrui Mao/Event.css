@@ -21,6 +21,10 @@
     color: rgb(36, 37, 39);
 }
 
+.content p{
+    margin: 0% 10% 0% 10%;
+}
+
 .back{
     position: relative;
     left: 10%;

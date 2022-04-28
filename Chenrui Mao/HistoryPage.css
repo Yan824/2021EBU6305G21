@@ -105,12 +105,13 @@
     padding:4px 8px;
 }
 .navigation ul li{
+    text-align: center;
     display: inline;
     float: left;
     clear: none;
     margin: 0;
     padding: 0;
-    width: 10%;
+    width: 14.2%;
     height: auto;
 }
 .navigation ul li:hover a,
@@ -125,7 +126,6 @@
     color:white;
     text-decoration: none;
 }
-.navigation ul li a:hover,
 .navigation ul li a:hover{
     background:rgb(154, 230, 154);
     color: #000;
@@ -235,6 +235,52 @@
     opacity: 0;
     background-color: rgb(110, 249, 249);
 }
+#HuBei{
+    width: 3%;
+    height: 3%;
+    border: none;
+    position: relative;
+    padding: 0;
+    left: 56%;
+    top: 60%;
+    background: url(img/Button.png); 
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#Hubeiinfo{
+    margin: 0;
+    width: 20%;
+    height: 20%;
+    border: none;
+    position: relative;
+    left: 59%;
+    top: 41%;
+    opacity: 0;
+    background-color: rgb(110, 249, 249);
+}
+#Shanghai{
+    width: 3%;
+    height: 3%;
+    border: none;
+    position: relative;
+    padding: 0;
+    left: 70%;
+    top: 60%;
+    background: url(img/Button.png); 
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#Shanghaiinfo{
+    margin: 0;
+    width: 20%;
+    height: 20%;
+    border: none;
+    position: relative;
+    left: 70%;
+    top: 60%;
+    opacity: 0;
+    background-color: rgb(110, 249, 249);
+}
 .jump{
     height: 10%;
     position: absolute;
@@ -256,7 +302,7 @@
 }
 
 button:active{
-    box-shadow: 0 5px #666;
+    
     transform: translateY(4px);
 }       
 button:focus{

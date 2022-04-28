@@ -21,12 +21,6 @@
 		function hideWindowY() {
 			document.getElementById("YunNaninfo").style.opacity = "0";
 		}
-        function displayWindowS() {
-			document.getElementById("Shanghaiinfo").style.opacity = "1";
-		}
-		function hideWindowS() {
-			document.getElementById("Shanghaiinfo").style.opacity = "0";
-		}
 	</script>
 
     <div class="menubar">
@@ -70,26 +64,24 @@
                 <li><a id="1941" href="1941-1943.html">1941-1943</a></li>
                 <li><a id="1943" href="1943-1945.html">1943-1945</a></li>
                 <li><a id="1946" href="1946.html">1946</a></li>
-                <script>document.getElementById("1938").style.background = 'red'</script>
+                <script>document.getElementById("1943").style.background = 'red'</script>
             </ul>
         </div>
         <br>
         <div class="main" style = "background-image: url(img/Zhongguo.png);background-size: 75% 100%;">
-            <button id="Shanghai" onclick="displayWindowS()"></button>
+            <button id="Beijing" onclick="displayWindowB()"></button>
             <button id="YunNan" onclick="displayWindowY()"></button>
-            <div id="Shanghaiinfo">
-                Series of lost
-                <button class="close" onclick="hideWindowS()"></button>
+            <div id="Beijinginfo">
+                <button class="close" onclick="hideWindowB()"></button>
                 <br>
-                <p>China suffered froma many great lost against Japan, many innocient people died...</p>
-            <a class="jump" href="Series of lost.html">Click to see more</a>
+                <p>111</p>
+            <a class="jump" href="#">Click to see more</a>
             </div>
             <div id="YunNaninfo">
-                Move to Kunming
                 <button class="close" onclick="hideWindowY()"></button>
                 <br>
-                <p>Through consideration, the school decided to move its location to Kunming...</p>
-                <a class="jump" href="Move to Kunming.html">Click to see more</a>
+                <p>111</p>
+                <a class="jump" href="#">Click to see more</a>
             </div>
             
         </div>
