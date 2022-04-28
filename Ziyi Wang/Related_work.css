@@ -1,0 +1,167 @@
+
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:100%;
+    width:15%;
+    float:left;
+    padding:5px;	      
+}
+#section1 {
+    width:75%;
+    float:left;
+    padding:10px;	 	 
+}
+H3{
+    background-color: grey;
+    width: 100px;
+}
+body{
+    margin-top: 0;
+}
+ul,li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menubar{
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(172, 128, 69); */
+}
+.menubar ul{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    height: 45px;
+    line-height: 45px;
+    background-color: rgba(149, 141, 133, 0.763);
+}
+.menubar ul li{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 3; 
+    list-style: none;
+    width: 20%;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+.menubar ul li:hover a,
+.menubar ul li a{
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    display: block; 
+}
+.menubar li:hover ul li a:hover,
+.menubar ul li a:hover{
+    height: 100%;
+    
+    background:rgba(182, 225, 220, 0.685);
+    /* color: #000; */
+}
+.admin{
+    z-index: 1;
+    height: 45px;
+    position: absolute;
+    left: 80%;
+    top: 0;
+    width: 20%;
+    background-color: rgba(203, 203, 241, 0.51);
+}
+
+.intro ul{
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0 0;
+}
+.intro ul li{
+    float: left;
+    clear: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    height: auto;
+}
+.main{
+    height: 820px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.briefIntro .text {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 10%;
+    overflow: hidden;
+    opacity: 0;
+    background-color: grey; 
+    transition: all 0.5s ease-in-out;
+}
+
+.briefIntro:hover .text { 
+	opacity: 1;
+}
+.briefIntro .text1 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    overflow: hidden;
+    opacity: 0;
+    background-color: grey; 
+    transition: all 0.5s ease-in-out;
+}
+
+.briefIntro:hover .text1 { 
+	opacity: 1;
+}
+
+.briefIntro img { 
+    transition: all 0.2s linear;
+    max-width: 100%;
+    height: 100%;
+}
+
+.briefIntro p { 
+    transform: translateY(100px);
+    opacity: 0;
+	transition: all 0.2s linear;
+}
+.briefIntro a.info{
+    opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+.briefIntro:hover img { 
+	transform: scale(1.1);
+} 
+.briefIntro h1{
+    text-align: center;
+    
+}
+.briefIntro:hover p,
+.briefIntro:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.briefIntro:hover p {
+    transition-delay: 0.1s;
+}
+.briefIntro:hover a.info {
+    transition-delay: 0.2s;
+}
