@@ -242,7 +242,7 @@
     position: relative;
     padding: 0;
     left: 56%;
-    top: 60%;
+    top: 65%;
     background: url(img/Button.png); 
     background-size:contain;
     background-repeat: no-repeat;
@@ -254,7 +254,7 @@
     border: none;
     position: relative;
     left: 59%;
-    top: 41%;
+    top: 46%;
     opacity: 0;
     background-color: rgb(110, 249, 249);
 }
