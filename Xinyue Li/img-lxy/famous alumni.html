@@ -17,6 +17,7 @@
         .menubar{
             margin: 0;
             padding: 0;
+            /* background-color: rgb(172, 128, 69); */
         }
         .menubar ul{
             padding: 0;
@@ -50,13 +51,15 @@
         .menubar li:hover ul li a:hover,
         .menubar ul li a:hover{
             height: 100%;
+            
             background:rgba(182, 225, 220, 0.685);
+            /* color: #000; */
         }
         .admin{
             z-index: 1;
             height: 45px;
             position: absolute;
-            left: 60%;
+            left: 20%;
             top: 0;
             width: 20%;
             background-color: rgba(203, 203, 241, 0.51);
@@ -64,6 +67,8 @@
         .background1{
             top: 45px;
             height: 120px;
+            /* border-color: green; */
+            /* border-style: solid; */
             background-image: url("img-lxy/school\ name1.png");
             background-repeat: no-repeat;
             background-size: 100% 100%;
@@ -72,12 +77,16 @@
             height: 600px;
             padding: 0;
             margin: 0;
+            /* border-color: rgb(255, 225, 225);   */
+            /* border-style: solid;   */
             background-image: url("img-lxy/Building.png");
             background-repeat: no-repeat;
             background-size: 100% 100%;
         }
         .background3{
             height: 100px;
+            /* border-color: blue; */
+            /* border-style: solid; */
             background-image: url("img-lxy/school\ name.png");
             background-repeat: no-repeat;
             background-size: 100% 100%;
@@ -87,13 +96,22 @@
             width: 800px;
             height: 500px;
             margin: 50px auto; 
-            overflow: hidden;   
+             overflow: hidden;   
             position: relative;
+            /* border-color: purple;  */
+            /* border-style: solid;  */
         } 
 
         .imageList{
+            
+            /* border-color: rgb(84, 222, 232); 
+            border-style: solid; 
+	        display:flex; 
+	        width: 800px; 
+	        height: 450px; */
             display: flex;
             position: relative;
+            /* left: 0px; */
             width: 800px;
             height: 450px;
             transition: 0.5s ease;
@@ -102,10 +120,11 @@
             display:block;  
 	        width: 800px; 
 	        height: 450px;
-            transition: 0.5s ease;
+            /* transition: 0.5s ease; */
         }
 
         .box-1 h2{
+	        /* position: absolute; */
             margin: 0;
 	        left: 0;
 	        bottom: 0;
@@ -129,7 +148,13 @@
             height: 500px;
             background-color: rgba(117, 114, 114, 0.61);
         }
-        
+        .box-3{
+            float: left;
+            width: 250px;
+            margin: 50px;
+            height: 500px;
+            background-color: rgba(117, 114, 114, 0.61);
+        } 
         .box-1 a {
             position: absolute;
             top: 50%;
@@ -154,6 +179,8 @@
             background-color: rgba(240, 248, 255, 0.626);
             background-image: url("img-lxy/SchoolLog.png"); 
             background-repeat: no-repeat;
+            /* border-color: blue; */
+            /* border-style: solid; */
             height: 120px;
             width: 120px;
         }
@@ -171,6 +198,8 @@
             color: rgb(43, 47, 76);
             font-weight: bold;
             background-color: rgba(240, 248, 255, 0.626);  
+            /* border-bottom-color: rgb(159, 134, 134); */
+            /* border-bottom-style: solid; */
         }
         .bottom1{
             z-index: 2;
@@ -201,111 +230,11 @@
             line-height: 80px;
             font-size: 40px;
         }
-        .circle1{
-            height: 20px;
-            width: 20px;
-            background: url(img-lxy/circle.png);
-            background-size: contain;
-            position: absolute;
-            border: none;
-        }
-        .circle1:active{
-            box-shadow: 0 5px #666;
-            transform: translateY(4px);
-        }
-        .circle1:focus{
-            outline:none;
-        }
-        .close1{
-            height: 20px;
-            width: 20px;
-            background: url(img-lxy/close.png);
-            left: 90%;
-            position: absolute;
-            background-size: contain;
-            border: none;
-        }
-        .close1:active{
-            box-shadow: 0 5px #666;
-            transform: translateY(4px);
-        }
-        .close1:focus{
-            outline:none;
-        }
-
-        #JiangMengL{
-            /* float: left; */
-            left: 1100px;
-            width: 250px;
-            margin: 50px;
-            height: 500px;
-            background-color: rgba(117, 114, 114, 0.61);
-            opacity: 1;
-            position: absolute;
-            transition: 0.5s;
-            /* z-index: 5; */
-        } 
-        #ZhuziQ{
-            /* float: right; */
-            left: 1100px;
-            width: 250px;
-            margin: 50px;
-            height: 500px;
-            background-color: rgba(117, 114, 114, 0.61);
-            opacity: 1;
-            position: absolute;
-            display: none;
-            transition: 0.5s;
-            /* z-index: 4; */
-        } 
-        #FengYouL{
-            /* float: right; */
-            left: 1100px;
-            width: 250px;
-            margin: 50px;
-            height: 500px;
-            background-color: rgba(117, 114, 114, 0.61);
-            opacity: 1;
-            position: absolute;
-            display: none;
-            transition: 0.5s;
-            /* z-index: 4; */
-        } 
-
-        #MeiYiQ{
-            /* float: right; */
-            left: 1100px;
-            width: 250px;
-            margin: 50px;
-            height: 500px;
-            background-color: rgba(117, 114, 114, 0.61);
-            opacity: 1;
-            position: absolute;
-            display: none;
-            transition: 0.5s;
-            /* z-index: 4; */
-        } 
-
-        #WenYiD{
-            /* float: right; */
-            left: 1100px;
-            width: 250px;
-            margin: 50px;
-            height: 500px;
-            background-color: rgba(117, 114, 114, 0.61);
-            opacity: 1;
-            position: absolute;
-            display: none;
-            transition: 0.5s;
-            /* z-index: 4; */
-        } 
+        
 
     </style>
 </head>
 <body>
-    <script>
-
-    </script>
     <div class="menubar">
         <ul>
             <li><a href="#">Main Page</a></li>
@@ -337,14 +266,10 @@
                 <ul>
                     <li>
                         <img src="img-lxy/photo1.png" alt="First Pictures"></img>
-                        <button class="circle1" onclick= "changeZzq()" style="left: 135px; top: 230px;"></button>
-                        <button class ="circle1" onclick = "changeFYL()" style="left: 190px; top: 230px;"></button>
                         <h2>This is the first picture here.</h2>
                     </li>
                     <li>
                         <img src="img-lxy/photo2.png" alt="Second Pictures"></img>
-                        <button class ="circle1" onclick = "changeMYQ()" style="left: 480px; top: 730px;"></button>
-                        <button class ="circle1" onclick = "changeWYD()" style="left: 435px; top: 660px;"></button>
                         <h2>This is the second picture here.</h2>
                     </li>
                     <li>
@@ -357,78 +282,12 @@
             <div class="arrow">
                 <a href="javascript:;" class="left" style="left: 0;"><</a>
                 <a href="javascript:;" class="right" style="right: 0;">></a>
-            
             </div>
         </div>
         
         
-        <div id="JiangMengL">
-            <!-- <button class="close1" onclick="hideJML()"></button> -->
+        <div class="box-3">
             <img src="img-lxy/Jiang.jpeg" style="width: 140px;height: 200px; margin: 10px 55px ;"/>
-            <div style="margin-top:15px;margin-left: 15px;margin-right: 15px;
-            background-color: rgba(248, 251, 254, 0.764);
-            height: 250px;">
-                The famous educator<br> <span style="font-weight:bold">Jiang Menglin (1886-1964)</span>, 
-                also known by his courtesy name (zi) Zhaoxian and 
-                pseudonym (hao) Menglin, was formerly named Mengxiong. 
-                He was born in Yuyao, Zhejiang Province...
-
-
-
-            </div>
-        </div>
-
-        <div id="ZhuziQ">
-            <button class="close1" onclick="hide()"></button>
-            <img src="img-lxy/Zhuzq.jpeg" style="width: 140px;height: 200px; margin: 10px 55px ;"/>
-            <div style="margin-top:15px;margin-left: 15px;margin-right: 15px;
-            background-color: rgba(248, 251, 254, 0.764);
-            height: 250px;">
-                The famous educator<br> <span style="font-weight:bold">Jiang Menglin (1886-1964)</span>, 
-                also known by his courtesy name (zi) Zhaoxian and 
-                pseudonym (hao) Menglin, was formerly named Mengxiong. 
-                He was born in Yuyao, Zhejiang Province...
-
-
-
-            </div>
-        </div>
-
-        <div id="FengYouL">
-            <button class="close1" onclick="hide()"></button>
-            <img src="img-lxy/FengYouL.jpeg" style="width: 140px;height: 200px; margin: 10px 55px ;"/>
-            <div style="margin-top:15px;margin-left: 15px;margin-right: 15px;
-            background-color: rgba(248, 251, 254, 0.764);
-            height: 250px;">
-                The famous educator<br> <span style="font-weight:bold">Jiang Menglin (1886-1964)</span>, 
-                also known by his courtesy name (zi) Zhaoxian and 
-                pseudonym (hao) Menglin, was formerly named Mengxiong. 
-                He was born in Yuyao, Zhejiang Province...
-
-
-
-            </div>
-        </div>
-
-        <div id="MeiYiQ">
-            <button class="close1" onclick="hide()"></button>
-            <img src="img-lxy/MeiyiQ.jpeg" style="width: 140px;height: 200px; margin: 10px 55px ;"/>
-            <div style="margin-top:15px;margin-left: 15px;margin-right: 15px;
-            background-color: rgba(248, 251, 254, 0.764);
-            height: 250px;">
-                The famous educator<br> <span style="font-weight:bold">Jiang Menglin (1886-1964)</span>, 
-                also known by his courtesy name (zi) Zhaoxian and 
-                pseudonym (hao) Menglin, was formerly named Mengxiong. 
-                He was born in Yuyao, Zhejiang Province...
-
-
-
-            </div>
-        </div>
-
-        <div id="WenYiD">
-            <button class="close1" onclick="hide()"></button>
-            <img src="img-lxy/WenYiD.jpg" style="width: 140px;height: 200px; margin: 10px 55px ;"/>
             <div style="margin-top:15px;margin-left: 15px;margin-right: 15px;
             background-color: rgba(248, 251, 254, 0.764);
             height: 250px;">
@@ -449,6 +308,8 @@
         let oRight = document.querySelector(".right");
         let oImgList = document.querySelector(".imageList");
 
+        // let clonefirstImg = oImgList.firstElementChild.cloneNode();
+        // oImgList.appendChild(clonefirstImg);
         let index = 0;
         oRight.addEventListener("click",() =>{
             index++;
@@ -470,51 +331,6 @@
              oImgList.style.top = index*(-500) + "px" ;
         
         })
-        function changeZzq(){
-            document.getElementById("ZhuziQ").style.display = "block";
-            document.getElementById("JiangMengL").style.display = "none";
-            document.getElementById("FengYouL").style.display = "none";
-            document.getElementById("WenYiD").style.display = "none";
-            document.getElementById("MeiYiQ").style.display = "none";
-        }
-
-        function hide(){
-            document.getElementById("JiangMengL").style.display = "block";
-            document.getElementById("ZhuziQ").style.display = "none";
-            document.getElementById("FengYouL").style.display = "none";
-            document.getElementById("WenYiD").style.display = "none";
-            document.getElementById("MeiYiQ").style.display = "none";
-
-        }
-
-        function changeFYL(){
-            document.getElementById("ZhuziQ").style.display = "none";
-            document.getElementById("JiangMengL").style.display = "none";
-            document.getElementById("FengYouL").style.display = "block";
-            document.getElementById("WenYiD").style.display = "none";
-            document.getElementById("MeiYiQ").style.display = "none";
-        }
-
-        function changeMYQ(){
-            document.getElementById("ZhuziQ").style.display = "none";
-            document.getElementById("JiangMengL").style.display = "none";
-            document.getElementById("FengYouL").style.display = "none";
-            document.getElementById("WenYiD").style.display = "none";
-            document.getElementById("MeiYiQ").style.display = "block";
-        }
-
-        function changeWYD(){
-            document.getElementById("ZhuziQ").style.display = "none";
-            document.getElementById("JiangMengL").style.display = "none";
-            document.getElementById("FengYouL").style.display = "none";
-            document.getElementById("WenYiD").style.display = "block";
-            document.getElementById("MeiYiQ").style.display = "none";
-        }
-
-
-
-
-
     </script>
     
     
