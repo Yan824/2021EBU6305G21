@@ -10,10 +10,10 @@
 <body>
     <script>
 		function displayWindowB() {
-			document.getElementById("Beijinginfo").style.opacity = "1";
+			document.getElementById("Battleinfo").style.opacity = "1";
 		}
 		function hideWindowB() {
-			document.getElementById("Beijinginfo").style.opacity = "0";
+			document.getElementById("Battleinfo").style.opacity = "0";
 		}
         function displayWindowY() {
 			document.getElementById("YunNaninfo").style.opacity = "1";
@@ -63,24 +63,25 @@
                 <li><a id="1939" href="1939-1940.html">1939-1940</a></li>
                 <li><a id="1941" href="1941-1943.html">1941-1943</a></li>
                 <li><a id="1943" href="1943-1945.html">1943-1945</a></li>
-                <li><a id="1946" href="1946.html">1946</a></li>
-                <script>document.getElementById("1939").style.background = 'red'</script>
+                <li><a id="1946" href="1946.html">1945-1946</a></li>
+                <script>document.getElementById("1939").style.background = 'rgb(45, 87, 252)'</script>
             </ul>
         </div>
         <br>
         <div class="main" style = "background-image: url(img/1939-1940.png);background-size: 75% 100%;">
-            <button id="Beijing" onclick="displayWindowB()"></button>
+            <button id="Battle" onclick="displayWindowB()"></button>
             <button id="YunNan" onclick="displayWindowY()"></button>
-            <div id="Beijinginfo">
+            <div id="Battleinfo">
                 <button class="close" onclick="hideWindowB()"></button>
                 <br>
                 <p>111</p>
             <a class="jump" href="#">Click to see more</a>
             </div>
             <div id="YunNaninfo">
+                Expansion of school
                 <button class="close" onclick="hideWindowY()"></button>
                 <br>
-                <p>111</p>
+                <p>The university starts to develop...</p>
                 <a class="jump" href="#">Click to see more</a>
             </div>
             

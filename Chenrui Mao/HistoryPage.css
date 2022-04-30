@@ -281,6 +281,29 @@
     opacity: 0;
     background-color: rgb(110, 249, 249);
 }
+#Battle{
+    width: 3%;
+    height: 3%;
+    border: none;
+    position: relative;
+    padding: 0;
+    left: 60%;
+    top: 60%;
+    background: url(img/Button.png); 
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#Battleinfo{
+    margin: 0;
+    width: 20%;
+    height: 20%;
+    border: none;
+    position: relative;
+    left: 60%;
+    top: 60%;
+    opacity: 0;
+    background-color: rgb(110, 249, 249);
+}
 .jump{
     height: 10%;
     position: absolute;
