@@ -22,9 +22,11 @@
 }
 
 .content p{
-    margin: 0% 10% 0% 10%;
+    margin: 0% 15% 0% 15%;
 }
-
+.content img{
+    width: 40%;
+}
 
 .back{
     position: relative;
