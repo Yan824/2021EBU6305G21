@@ -4,303 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type = "text/css" href = "Famous alumni.css" rel="stylesheet" />
     <title>Document</title>
-    <style>
-        body{
-            margin-top: 0;
-        }
-        ul,li{
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .menubar{
-            margin: 0;
-            padding: 0;
-        }
-        .menubar ul{
-            padding: 0;
-            margin: 0;
-            position: relative;
-            display: flex;
-            height: 45px;
-            line-height: 45px;
-            background-color: rgba(149, 141, 133, 0.763);
-        }
-        .menubar ul li{
-            text-decoration: none;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            z-index: 3; 
-            list-style: none;
-            width: 20%;
-            text-align: center;
-            border-radius: 10px;
-            color: rgb(255, 255, 255);
-        }
-        .menubar ul li:hover a,
-        .menubar ul li a{
-            z-index: 3;
-            width: 100%;
-            height: 100%;
-            display: block;
-            color: aliceblue;
-            text-decoration: none;
-            display: block; 
-        }
-        .menubar li:hover ul li a:hover,
-        .menubar ul li a:hover{
-            height: 100%;
-            background:rgba(182, 225, 220, 0.685);
-        }
-        .admin{
-            z-index: 1;
-            height: 45px;
-            position: absolute;
-            left: 60%;
-            top: 0;
-            width: 20%;
-            background-color: rgba(203, 203, 241, 0.51);
-        }
-        .background1{
-            top: 45px;
-            height: 120px;
-            background-image: url("img-lxy/school\ name1.png");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-        }
-        .background2{
-            height: 600px;
-            padding: 0;
-            margin: 0;
-            background-image: url("img-lxy/Building.png");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-        }
-        .background3{
-            height: 100px;
-            background-image: url("img-lxy/school\ name.png");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-        }
-       .box-1{
-            float: left;
-            width: 800px;
-            height: 500px;
-            margin: 50px auto; 
-            overflow: hidden;   
-            position: relative;
-        } 
-
-        .imageList{
-            display: flex;
-            position: relative;
-            width: 800px;
-            height: 450px;
-            transition: 0.5s ease;
-        }
-        .imageList img{
-            display:block;  
-	        width: 800px; 
-	        height: 450px;
-            transition: 0.5s ease;
-        }
-
-        .box-1 h2{
-            margin: 0;
-	        left: 0;
-	        bottom: 0;
-            height: 50px;
-	        width:300px;
-	        background: rgba(248, 251, 254, 0.764);
-	        text-indent: 2em;
-	        padding-right:500px ;
-	        font-size: 15px;
-	        line-height: 40px;
-	        text-overflow: ellipsis;
-	        overflow: hidden;
-	        white-space: nowrap;
-	        font-weight: normal;
-	        color: rgb(18, 18, 18)
-        } 
-       .box-2{
-            float: left;
-            margin: 50px;
-            width: 200px;
-            height: 500px;
-            background-color: rgba(117, 114, 114, 0.61);
-        }
-        
-        .box-1 a {
-            position: absolute;
-            top: 50%;
-            transform: translate(0, -50%);
-            display: block;
-            width: 40px;
-            height: 70px;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            user-select: none;
-            font-size: 30px;
-            text-align: center;
-            line-height: 70px;
-            text-decoration: none;
-        }
-        .schoolLogo{
-            z-index: 3;
-            display: block;
-            position: absolute;
-            left: 50px;
-            top: 70px;
-            background-color: rgba(240, 248, 255, 0.626);
-            background-image: url("img-lxy/SchoolLog.png"); 
-            background-repeat: no-repeat;
-            height: 120px;
-            width: 120px;
-        }
-        .schoolName{
-            z-index: 3;
-            padding: 0;
-            margin: 0;
-            top: 70px;
-            left: 170px;
-            height: 40px;
-            width: 23%;
-            line-height: 40px;
-            position: absolute;
-            font-family: "Microsoft Yahei";
-            color: rgb(43, 47, 76);
-            font-weight: bold;
-            background-color: rgba(240, 248, 255, 0.626);  
-        }
-        .bottom1{
-            z-index: 2;
-            padding: 0;
-            margin: 0;
-            top: 70px;
-            left: 170px;
-            height: 120px;
-            width: 30%;
-            background-color: rgba(159, 203, 241, 0.626);
-            position: absolute;
-
-        }
-        .title1{
-            z-index: 3;
-            padding: 0;
-            margin: 0;
-            position: absolute;
-            top: 110px;
-            left: 200px;
-            height: 80px;
-            width:28%;
-            text-align: center;
-            display: block;
-            background-color: rgba(240, 248, 255, 0.626);
-            font-family: "Microsoft Yahei";
-            font-weight: bold;
-            line-height: 80px;
-            font-size: 40px;
-        }
-        .circle1{
-            height: 20px;
-            width: 20px;
-            background: url(img-lxy/circle.png);
-            background-size: contain;
-            position: absolute;
-            border: none;
-        }
-        .circle1:active{
-            box-shadow: 0 5px #666;
-            transform: translateY(4px);
-        }
-        .circle1:focus{
-            outline:none;
-        }
-        .close1{
-            height: 20px;
-            width: 20px;
-            background: url(img-lxy/close.png);
-            left: 90%;
-            position: absolute;
-            background-size: contain;
-            border: none;
-        }
-        .close1:active{
-            box-shadow: 0 5px #666;
-            transform: translateY(4px);
-        }
-        .close1:focus{
-            outline:none;
-        }
-
-        #JiangMengL{
-            /* float: left; */
-            left: 1100px;
-            width: 250px;
-            margin: 50px;
-            height: 500px;
-            background-color: rgba(117, 114, 114, 0.61);
-            opacity: 1;
-            position: absolute;
-            transition: 0.5s;
-            /* z-index: 5; */
-        } 
-        #ZhuziQ{
-            /* float: right; */
-            left: 1100px;
-            width: 250px;
-            margin: 50px;
-            height: 500px;
-            background-color: rgba(117, 114, 114, 0.61);
-            opacity: 1;
-            position: absolute;
-            display: none;
-            transition: 0.5s;
-            /* z-index: 4; */
-        } 
-        #FengYouL{
-            /* float: right; */
-            left: 1100px;
-            width: 250px;
-            margin: 50px;
-            height: 500px;
-            background-color: rgba(117, 114, 114, 0.61);
-            opacity: 1;
-            position: absolute;
-            display: none;
-            transition: 0.5s;
-            /* z-index: 4; */
-        } 
-
-        #MeiYiQ{
-            /* float: right; */
-            left: 1100px;
-            width: 250px;
-            margin: 50px;
-            height: 500px;
-            background-color: rgba(117, 114, 114, 0.61);
-            opacity: 1;
-            position: absolute;
-            display: none;
-            transition: 0.5s;
-            /* z-index: 4; */
-        } 
-
-        #WenYiD{
-            /* float: right; */
-            left: 1100px;
-            width: 250px;
-            margin: 50px;
-            height: 500px;
-            background-color: rgba(117, 114, 114, 0.61);
-            opacity: 1;
-            position: absolute;
-            display: none;
-            transition: 0.5s;
-            /* z-index: 4; */
-        } 
-
-    </style>
+    
 </head>
 <body>
     <script>
@@ -327,6 +33,7 @@
         
     </div>
     <div class="schoolLogo">
+       
     </div>
     <div class="background2">
         <div class="box-2">
@@ -337,14 +44,14 @@
                 <ul>
                     <li>
                         <img src="img-lxy/photo1.png" alt="First Pictures"></img>
-                        <button class="circle1" onclick= "changeZzq()" style="left: 135px; top: 230px;"></button>
-                        <button class ="circle1" onclick = "changeFYL()" style="left: 190px; top: 230px;"></button>
+                        <button class="circle1" onclick= "changeZzq()" style="left: 17%; top: 51%;"></button>
+                        <button class ="circle1" onclick = "changeFYL()" style="left: 25%; top: 51%;"></button>
                         <h2>This is the first picture here.</h2>
                     </li>
                     <li>
                         <img src="img-lxy/photo2.png" alt="Second Pictures"></img>
-                        <button class ="circle1" onclick = "changeMYQ()" style="left: 480px; top: 730px;"></button>
-                        <button class ="circle1" onclick = "changeWYD()" style="left: 435px; top: 660px;"></button>
+                        <button class ="circle1" onclick = "changeMYQ()" style="left: 55%; top: 146%;"></button>
+                        <button class ="circle1" onclick = "changeWYD()" style="left: 60%; top: 160%;"></button>
                         <h2>This is the second picture here.</h2>
                     </li>
                     <li>
@@ -364,10 +71,8 @@
         
         <div id="JiangMengL">
             <!-- <button class="close1" onclick="hideJML()"></button> -->
-            <img src="img-lxy/Jiang.jpeg" style="width: 140px;height: 200px; margin: 10px 55px ;"/>
-            <div style="margin-top:15px;margin-left: 15px;margin-right: 15px;
-            background-color: rgba(248, 251, 254, 0.764);
-            height: 250px;">
+            <img src="img-lxy/Jiang.jpeg" class = "famousP"/>
+            <div class = "description" >
                 The famous educator<br> <span style="font-weight:bold">Jiang Menglin (1886-1964)</span>, 
                 also known by his courtesy name (zi) Zhaoxian and 
                 pseudonym (hao) Menglin, was formerly named Mengxiong. 
@@ -380,10 +85,8 @@
 
         <div id="ZhuziQ">
             <button class="close1" onclick="hide()"></button>
-            <img src="img-lxy/Zhuzq.jpeg" style="width: 140px;height: 200px; margin: 10px 55px ;"/>
-            <div style="margin-top:15px;margin-left: 15px;margin-right: 15px;
-            background-color: rgba(248, 251, 254, 0.764);
-            height: 250px;">
+            <img src="img-lxy/Zhuzq.jpeg" class = "famousP"/>
+            <div class = "description">
                 The famous educator<br> <span style="font-weight:bold">Jiang Menglin (1886-1964)</span>, 
                 also known by his courtesy name (zi) Zhaoxian and 
                 pseudonym (hao) Menglin, was formerly named Mengxiong. 
@@ -396,10 +99,8 @@
 
         <div id="FengYouL">
             <button class="close1" onclick="hide()"></button>
-            <img src="img-lxy/FengYouL.jpeg" style="width: 140px;height: 200px; margin: 10px 55px ;"/>
-            <div style="margin-top:15px;margin-left: 15px;margin-right: 15px;
-            background-color: rgba(248, 251, 254, 0.764);
-            height: 250px;">
+            <img src="img-lxy/FengYouL.jpeg" class = "famousP"/>
+            <div class = "description">
                 The famous educator<br> <span style="font-weight:bold">Jiang Menglin (1886-1964)</span>, 
                 also known by his courtesy name (zi) Zhaoxian and 
                 pseudonym (hao) Menglin, was formerly named Mengxiong. 
@@ -412,10 +113,8 @@
 
         <div id="MeiYiQ">
             <button class="close1" onclick="hide()"></button>
-            <img src="img-lxy/MeiyiQ.jpeg" style="width: 140px;height: 200px; margin: 10px 55px ;"/>
-            <div style="margin-top:15px;margin-left: 15px;margin-right: 15px;
-            background-color: rgba(248, 251, 254, 0.764);
-            height: 250px;">
+            <img src="img-lxy/MeiyiQ.jpeg" class = "famousP"/>
+            <div class = "description">
                 The famous educator<br> <span style="font-weight:bold">Jiang Menglin (1886-1964)</span>, 
                 also known by his courtesy name (zi) Zhaoxian and 
                 pseudonym (hao) Menglin, was formerly named Mengxiong. 
@@ -428,10 +127,8 @@
 
         <div id="WenYiD">
             <button class="close1" onclick="hide()"></button>
-            <img src="img-lxy/WenYiD.jpg" style="width: 140px;height: 200px; margin: 10px 55px ;"/>
-            <div style="margin-top:15px;margin-left: 15px;margin-right: 15px;
-            background-color: rgba(248, 251, 254, 0.764);
-            height: 250px;">
+            <img src="img-lxy/WenYiD.jpg" class = "famousP"/>
+            <div class = "description">
                 The famous educator<br> <span style="font-weight:bold">Jiang Menglin (1886-1964)</span>, 
                 also known by his courtesy name (zi) Zhaoxian and 
                 pseudonym (hao) Menglin, was formerly named Mengxiong. 
@@ -452,11 +149,11 @@
         let index = 0;
         oRight.addEventListener("click",() =>{
             index++;
-            oImgList.style.top = index*(-500) + "px" ;
+            oImgList.style.top = index*(-69) + "vh" ;
             oImgList.style.transition = "0.5s ease";
             if(index >= 3){
                 index = 0 ;
-                oImgList.style.top = index*(-500) + "px" ;
+                oImgList.style.top = index*(-69) + "vh" ;
              }
         
         })
@@ -464,10 +161,10 @@
         oLeft.addEventListener("click",() =>{
             index--;
             if(index <= -1){
-                oImgList.style.top = index*-500 + "px" ;
+                oImgList.style.top = index*-69 + "vh" ;
                 index = 2 ;
              }
-             oImgList.style.top = index*(-500) + "px" ;
+             oImgList.style.top = index*(-69) + "vh" ;
         
         })
         function changeZzq(){
