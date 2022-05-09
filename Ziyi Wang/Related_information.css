@@ -1,0 +1,252 @@
+
+body{
+    margin-top: 0;
+    height: 100%;
+    background-image: url("img/bk1.jpeg");
+    background-repeat: no-repeat;
+    background-size:100% 150%;
+}
+.top{
+    width: 100%;
+    height: 250px;
+    text-align: left;
+    line-height: 200px;
+    margin: 0 auto;
+    
+}
+.schoolLogo{
+    z-index: 3;
+    display: block;
+    position: absolute;
+    left: 3%;
+    top: 9vh;
+    background-color: rgba(240, 248, 255, 0.626);
+    background: url("img/SchoolLog.png"); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10%;
+    height: 20vh;
+    
+}
+.schoolName{
+    white-space:nowrap;
+    z-index: 3;
+    padding: 0;
+    margin: 0;
+    top: 10vh;
+    left: 13%;
+    height: 6vh;
+    width: 23%;
+    line-height: 6vh;
+    position: absolute;
+    font-family: "Microsoft Yahei";
+    font-size: 0.8vw;
+    color: rgb(43, 47, 76);
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(240, 248, 255, 0.626);  
+}
+.bottom1{
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    top: 10vh;
+    left: 13%;
+    height: 16vh;
+    width: 30%;
+    background-color: rgba(153, 194, 230, 0.615);
+    position: absolute;
+
+}
+.title1{
+    white-space:nowrap;
+    z-index: 3;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 16vh;
+    left: 15%;
+    height: 10vh;
+    width:28%;
+    text-align: center;
+    display: block;
+    background-color: rgba(240, 248, 255, 0.626);
+    font-family: "Microsoft Yahei";
+    font-weight: bold;
+    line-height: 10vh;
+    font-size: 3vw;
+}
+.left{
+    width: 15%;
+    position: fixed;
+    left: 8%;
+}
+.right{
+    width: 65%;
+    float: right;
+    margin-right: 10%;
+}
+.subTitle{
+    background-color: #DCDCDC;
+    width: 10%;
+}
+.Title3{
+    background-color:dimgrey;
+}
+.left ul li{
+    width: 150px;
+    height: 25px;
+    line-height: 25px;
+    padding: 5px;
+    text-align: center;
+    list-style: none;
+    border:1px solid #DCDCDC;
+    background-color: aqua;
+}
+.left a{
+    text-decoration: none;
+    color: black;
+    
+}
+.left li:hover{
+    background-color: white;
+}
+.left a:active{
+    color: #AFEEEE;
+}
+.header{
+    margin: 0;
+    padding: 0;
+}
+.header ul{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    height: 45px;
+    line-height: 45px;
+    background-color: rgba(149, 141, 133, 0.763);
+}
+.header ul li{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 3; 
+    list-style: none;
+    width: 20%;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+.header ul li:hover a,
+.header ul li a{
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    display: block; 
+}
+.header li:hover ul li a:hover,
+.header ul li a:hover{
+    height: 100%;
+    
+    background:rgba(182, 225, 220, 0.685);
+}
+.admin{
+    z-index: 1;
+    height: 45px;
+    position: absolute;
+    left: 80%;
+    top: 0;
+    width: 20%;
+    background-color: rgba(203, 203, 241, 0.51);
+}
+
+.intro ul{
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0 0;
+}
+.intro ul li{
+    float: left;
+    clear: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    height: auto;
+}
+.main{
+    height: 820px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.briefIntro .text {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 30%;
+    overflow: hidden;
+    opacity: 0;
+    background-color: grey; 
+    transition: all 0.5s ease-in-out;
+}
+
+.briefIntro:hover .text { 
+	opacity: 1;
+}
+.briefIntro .text1 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 60%;
+    overflow: hidden;
+    opacity: 0;
+    background-color: grey; 
+    transition: all 0.5s ease-in-out;
+}
+
+.briefIntro:hover .text1 { 
+	opacity: 1;
+}
+
+.briefIntro img { 
+    transition: all 0.2s linear;
+    max-width: 100%;
+    height: 100%;
+}
+
+.briefIntro p { 
+    transform: translateY(100px);
+    opacity: 0;
+	transition: all 0.2s linear;
+}
+.briefIntro a.info{
+    opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+.briefIntro:hover img { 
+	transform: scale(1.1);
+} 
+.briefIntro h1{
+    text-align: center;
+    
+}
+.briefIntro h2{
+    text-align: center;
+}
+.briefIntro:hover p,
+.briefIntro:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.briefIntro:hover p {
+    transition-delay: 0.1s;
+}
+.briefIntro:hover a.info {
+    transition-delay: 0.2s;
+}
