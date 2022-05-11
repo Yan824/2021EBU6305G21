@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .btn {
+			    border: none;
+			    font-family: inherit;
+			    font-size: inherit;
+			    color: inherit;
+			    background: 0 0;
+			    cursor: pointer;
+			    padding: 25px 80px;
+			    display: inline-block;
+			    margin: 25px 80px;
+			    text-transform: uppercase;
+			    letter-spacing: 1px;
+			    font-weight: 700;
+			    outline: none;
+			    position: relative;
+			    transition: all .3s;
+			}
+			.btn:after {
+			    content: '';
+			    position: absolute;
+			    z-index: -1;
+			    transition: all .3s;
+			}
+            .btn-1:hover {
+			    color: #0e83cd;
+				/* transform: scaleX(1.2); */
+				 /* background: red; */
+			}
+			.btn-1 {
+			    border: 3px solid #fff;
+			    color: #fff;
+			}
+			.btn-1a:hover {
+			    color: #0e83cd;
+			    background: #fff;
+			}
+
+body {
+		margin: 0;
+		padding: 0;
+		background: #000a10;
+	}
+	.abc {
+	margin-top: 6.25rem;
+	/* background-color:red; */
+	width: 180px;
+	margin-left: 50px;
+				
+	}
+    </style>
+<body>
+    <div class="abc">
+        <div>
+            <button class="btn btn-1 btn-1a">hello world</button>
+        </div>
+    </div>
+</body>
+</html>

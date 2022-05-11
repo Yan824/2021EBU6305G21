@@ -18,7 +18,7 @@
         }
         .background{
             height: 600px;
-            background-image: url("images/bk1.jpeg");
+            background-image: url("images/bk2.png");
             background-repeat: no-repeat;
             background-size:100% 100%;
         }
@@ -163,7 +163,7 @@
             height: 400px;
             width: 200px;
             position: absolute;
-            left: 3%;
+            left: 2%;
             top: 20%;
             border-style: hidden;
         }
@@ -178,9 +178,24 @@
         }
 
         .button{
-            height: 40px;
+            height: 50px;
             text-align: center;
             margin: 100px;
+            line-height: 46px;
+            background: #2e82ff7a;
+            color: #ffffff;
+            font-size: 18px;
+            border-radius: 25px;
+            animation: zoomIn 1.5s infinite;
+
+        }
+        @keyframes zoomIn {
+            60% {
+            transform: scale(1.2);
+            }
+            100% {
+            transform: scale(1);
+            }
         }
 
         button:active{
@@ -193,6 +208,122 @@
         ul li{
         list-style:none;
         }
+        #container {
+            height: 600px;
+            width: 400px;
+            position: absolute;
+            top: 50%;
+            left: 33%;
+            border-color: rgb(246, 213, 207);
+            text-align: center;
+            font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;;
+            font-weight: bold;
+            color: rgb(239, 85, 85);
+            font-size: 50px;
+            opacity: 1;
+}
+
+#flip {
+  height: 70px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color:#fff;
+  padding:4px 12px;
+  height: 45px;
+  margin-bottom:40px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+p {
+  position:fixed;
+  width:100%;
+  bottom:30px;
+  font-size:12px;
+  color:#999;
+  margin-top:200px;
+}
+.schoolLogo{
+ z-index: 3;
+ display: block;
+ position: absolute;
+ left: 3%;
+ top: 9vh;
+ background-color: rgba(240, 248, 255, 0.626);
+ background: url("images/logo.jpeg"); 
+ background-repeat: no-repeat;
+ background-size: contain;
+ width: 10%;
+ height: 20vh;
+ 
+}
+.schoolName{
+ white-space:nowrap;
+ z-index: 3;
+ padding: 0;
+ margin: 0;
+top: 10vh;
+left: 13%;
+ height: 6vh;
+ width: 23%;
+ line-height: 6vh;
+ position: absolute;
+ font-family: "Microsoft Yahei";
+ font-size: 0.8vw;
+ color: rgb(43, 47, 76);
+ text-align: center;
+ font-weight: bold;
+ background-color: rgba(240, 248, 255, 0.626); 
+}
+.bottom1{
+ z-index: 2;
+ padding: 0;
+ margin: 0;
+  top: 10vh;
+ left: 13%;
+ height: 16vh;
+ width: 30%;
+ background-color: rgba(153, 194, 230, 0.615);
+ position: absolute;
+
+}
+.title1{
+ white-space:nowrap;
+ z-index: 3;
+ padding: 0;
+ margin: 0;
+ position: absolute;
+ top: 16vh;
+ left: 15%;
+ height: 10vh;
+ width:28%;
+ text-align: center;
+ display: block;
+ background-color: rgba(240, 248, 255, 0.626);
+ font-family: "Microsoft Yahei";
+ font-weight: bold;
+ line-height: 10vh;
+ font-size: 3vw;
+}
+        
     </style>
 
  
@@ -203,36 +334,36 @@
             //显示悬浮层 
             function showScale(){ 
             document.getElementById("scale").style.opacity="1"; 
-            document.getElementById("welcome").style.opacity="0"; 
+            document.getElementById("container").style.opacity="0"; 
             } 
             //隐藏悬浮层 
             function hiddenScale(){ 
             document.getElementById("scale").style.opacity="0";
-            document.getElementById("welcome").style.opacity="1";
+            document.getElementById("container").style.opacity="1";
             } 
             function showSpirits(){ 
             document.getElementById("spirits").style.opacity="1";
-            document.getElementById("welcome").style.opacity="0"; 
+            document.getElementById("container").style.opacity="0"; 
             } 
             function hiddenSpirits(){ 
             document.getElementById("spirits").style.opacity="0";
-            document.getElementById("welcome").style.opacity="1";
+            document.getElementById("container").style.opacity="1";
             } 
             function showRegulations(){ 
             document.getElementById("regulations").style.opacity="1";
-            document.getElementById("welcome").style.opacity="0";  
+            document.getElementById("container").style.opacity="0";  
             } 
             function hiddenRegulations(){ 
             document.getElementById("regulations").style.opacity="0"; 
-            document.getElementById("welcome").style.opacity="1";
+            document.getElementById("container").style.opacity="1";
             }
             function showAchievements(){ 
             document.getElementById("achievements").style.opacity="1";
-            document.getElementById("welcome").style.opacity="0"; 
+            document.getElementById("container").style.opacity="0"; 
             }
             function hiddenAchievements(){ 
             document.getElementById("achievements").style.opacity="0";
-            document.getElementById("welcome").style.opacity="1";
+            document.getElementById("container").style.opacity="1";
             }
            </script> 
         <div class="background">
@@ -250,20 +381,26 @@
                 Introduction to
             </div>
             <div class="box-1">
-            <button class="button" onmouseover= "showScale()" onmouseout="hiddenScale()" onclick="location='Scale.html'">Scale</button>
-            <button class="button" onmouseover= "showSpirits()" onmouseout="hiddenSpirits()">Spirits</button>
+            <button class="button" onmouseover= "showScale();this.style.cursor='pointer'", onmouseout="hiddenScale()" onclick="location='Scale.html'" >Scale</button>
+            <button class="button" onmouseover= "showSpirits();this.style.cursor='pointer'" onmouseout="hiddenSpirits()" onclick="location='Culture.html'">Culture</button>
             </div>
             <div class="box-2">
-                <button class="button" onmouseover= "showRegulations()" onmouseout="hiddenRegulations()">Regulations</button>
-                <button class="button" onmouseover= "showAchievements()" onmouseout="hiddenAchievements()">Achievements</button>
+                <button class="button" onmouseover= "showRegulations();this.style.cursor='pointer'" onmouseout="hiddenRegulations()" onclick="location='Regulations.html'">Regulations</button>
+                <button class="button" onmouseover= "showAchievements();this.style.cursor='pointer'" onmouseout="hiddenAchievements()"onclick="location='Achievements.html'">Achievements</button>
             </div>
             <div id="scale">Click to get more about the scale!</div>
-            <div id="spirits">Click to get more about the spirits!</div>
+            <div id="spirits">Click to get more about the culture!</div>
             <div id="regulations">Click to get more about the regulations!</div>
             <div id="achievements">Click to get more about the achievements!</div>
-            <div id="welcome">Welcome to NSAU!<br>Choose what interests you!</div>
-            <div class="leftarrow"></div>
-            <div class="rightarrow"></div>
+            <div id=container>
+                Welcome!
+                <div id=flip>
+                  <div><div>from both sides</div></div>
+                  <div><div>content</div></div>
+                  <div><div>Choose</div></div>
+                </div>
+                
+              </div>
         </div>
     </body>
 

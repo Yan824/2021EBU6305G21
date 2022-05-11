@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Culture of NASU</title>
+        <style type="text/css">
+            body{
+                background-color: #010006;
+            }
+            .back{
+                position:absolute;
+                width: 100px;
+                height: 80px;
+                left:0;
+                top:0;
+                text-align: center;
+                margin: 0;
+            }
+            .top{
+                background-image: url("images/flag.jpeg");
+                background-size:100% 100%;
+                width: 80%;
+                height: 200px;
+                text-align: center;
+                line-height: 200px;/*将文本高度设置为和容器一样的高度，使文本垂直居中*/
+                margin: 0 auto;/*设置div容器居中*/
+                background-color: #E6E6FA;
+            }
+            .left{
+                width: 15%;
+                position: fixed;/*设置左侧导航栏相对于浏览器窗口固定*/
+                left: 8%;
+            }
+            .right{
+                width: 65%;
+                float: right;
+                margin-right: 10%;
+            }
+            ul li{
+                /*ul是块级元素，可以设置宽度和高度*/
+                width: 150px;/*设置li的宽度*/
+                height: 25px;
+                line-height: 25px;/*将文本高度设置为和容器一样的高度，使文本上下距离一样*/
+                padding: 5px;
+                text-align: center;/*文字居中*/
+                list-style: none;/*去掉列表项前面的圆黑点*/
+                border:1px solid #DCDCDC;/*设置边框宽度为1px,实线,颜色为darkgray*/
+            }
+
+            #box {
+            width: 100%;
+            margin: 0 auto;
+            border: 0;
+            overflow: hidden;
+            }
+
+
+
+            .animate {
+            padding-left: 20px;
+            font-size: 12px;
+            color: #1E90FF;
+            display: inline-block;
+            white-space: nowrap;
+            animation: 60s wordsLoop linear infinite normal;
+            }
+
+
+
+@keyframes wordsLoop {
+0% {
+    transform: translateX(300px);
+    -webkit-transform: translateX(300px);
+}
+100% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+}
+
+@-webkit-keyframes wordsLoop {
+0% {
+    transform: translateX(300px);
+    -webkit-transform: translateX(300px);
+}
+100% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+}
+#card {
+            width: 80%;
+            height: 300px;
+            box-shadow: 2px 3px rgba(0, 0, 0, 0.137);
+            position: relative;
+        }
+ 
+        .inner_part {
+            width: 800px;
+            height: 300px;
+            position: absolute;
+        }
+ 
+ 
+        #c1,
+        #c2
+        {
+            opacity: 0;
+            width: 300px;
+            height: 250px;
+            margin: 25px;
+            border-radius: 10px;
+            overflow: hidden;
+ 
+            float: left;
+ 
+        }
+ 
+ 
+        .content {
+            width: 440px;
+            height: 250px;
+            opacity: 0;
+            float: left;
+            margin: 0px;
+        }
+        #slider{
+            position: absolute;
+            z-index: 99;
+            right: 25px;
+            bottom: 25px;
+        }
+ 
+        #c1 {
+            background-color: rgb(0, 47, 167);
+        }
+ 
+        #c2 {
+            background-color: rgb(255, 0, 0);
+        }
+ 
+
+ 
+        #test1:checked~#card .inner_part #c1,
+        #test2:checked~#card .inner_part #c2
+        {
+            opacity: 1;
+        }
+ 
+        #test1:checked~#card .inner_part #content1,
+        #test2:checked~#card .inner_part #content2
+        {
+            opacity: 1;
+        }
+            a{
+                text-decoration: none;/*去除a标签内容的下划线*/
+                color: #1E90FF;
+            }
+            li:hover{
+                background-color: #F5F5F5;
+            }
+            a:active{
+                color: #AFEEEE;
+            }
+            h2{
+                color: #1E90FF;
+            }
+            h3{
+                color: #1E90FF;
+            }
+            p{
+                color: white;
+            }
+            .demo{
+    width:400px;
+    height:250px;
+    margin:0px auto;
+    overflow: hidden;
+}
+.demo1{
+    width: 2000px;
+    height:250px;
+    margin:0px auto;
+    animation:text 25s infinite  linear;
+    font-size:0px;
+    
+}
+.demo1 img{
+    width:400px;
+    height:250px;
+    float:left;
+}
+@keyframes text {          /*0%-20%是播放下一个图片，0%-10%是图片暂停的时间*/
+    0%,10%{
+        margin-left:0px;
+    }
+    20%,30%{
+        margin-left:-400px;
+    }
+    40%,50%{
+        margin-left:-800px;
+    }
+    60%,70%{
+        margin-left:-1200px;
+    }
+    80%,90%{
+        margin-left:-1600px;
+    }
+}
+.btn {
+			    border: none;
+			    font-family: inherit;
+			    font-size: inherit;
+			    color: inherit;
+			    background: 0 0;
+			    cursor: pointer;
+			    padding: 25px 80px;
+			    display: inline-block;
+			    margin: 5px;
+			    text-transform: uppercase;
+			    letter-spacing: 1px;
+			    font-weight: 700;
+			    outline: none;
+			    position: relative;
+			    transition: all .3s;
+                width: 350px;
+			}
+			.btn:after {
+			    content: '';
+			    position: absolute;
+			    z-index: -1;
+			    transition: all .3s;
+			}
+            .btn-1:hover {
+			    color: #0e83cd;
+				/* transform: scaleX(1.2); */
+				 /* background: red; */
+			}
+			.btn-1 {
+			    border: 3px solid #fff;
+			    color: #fff;
+			}
+			.btn-1a:hover {
+			    color: #0e83cd;
+			    background: #fff;
+			}
+            .box-left{
+                float: left;
+                position: relative;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <a class="back" onclick="location='School_Introduction_firstversion.html'" onmouseover="this.style.cursor='pointer'">Back to main page</a>
+        </div>
+        <div class="top">
+            <h1 style="color: #1E90FF;">Culture of NASU</h1>
+        </div>
+        <div id="content">
+            <div class="left">
+                <ul class="tab">
+                    <li><a href="#section-1">School Motto</a></li>
+                    <li><a href="#section-2">School Song</a></li>
+                    <li><a href="#section-3">Logo & Flag</a></li>
+                    <li><a href="#section-4">Student Clubs</a></li>
+                    <li><a href="#section-5">Other Topics</a></li>
+
+               </ul>
+            </div>
+            <div class="right">
+                <h2 id="section-1">·School Motto</h2>
+                <p>On December 2, 1938, the 95th Standing Committee of the National Southwestern United University resolved to adopt the motto of "Fortitude and Perseverance" and made a public announcement.</p>
+                <div style="float: right; clear: both;" align="center">
+                    <br><img src="images/spirits.jpeg" width="200px" alt="" hspace="8"><p style="color: #1E90FF;">Announcement of NASU's motto:<br>"Fortitude and Perseverance"</p><br>
+                    </div>
+                    <p>The "fortitude" in "fortitude and perseverance" requires students and faculty to be selfless and fearless, that is, "no desire is rigid", to maintain their own subjectivity toward the material world or others, and at the same time The "firmness" requires students and teachers to be firm, hardworking and self-motivated, diligent in their studies, and successful in their careers, but not in their fame, fortune, or status, and not to be teachers of others, but to be humble and kind, to treat others with sincerity, to follow good advice, and to be able to The goal is to maintain human subjectivity. The goal is to maintain human subjectivity, human dignity, and human value, and to fully embody the humanistic spirit of the university.</p>
+    
+                <br />
+                <br />
+                <hr>
+                <h2 id="section-2">·School Song</h2>
+                <div style="float: left; clear: both;" align="center">
+                    <br><img src="images/song.jpeg" width="200px" alt="" hspace="8"><p style="color: #1E90FF;">"NASU School Song Main Tune"<br>composed by Chang Ching Chang</p>
+                    <audio src="aduio/school_song.mp3" controls="controls"></audio>    
+                </div>
+                <p>In October 1938, the 89th Standing Committee of NASU resolved to hire Feng Youlan, Zhu Ziqing, Wen Yiduo, Luo Yong, and Luo Changpei as members of the committee to compile the school song, and asked Feng Youlan to be the chairman of the committee.On October 30, the school song committee discussed using Luo Yong's words as the lyrics of the school song, but asked Zhang Qingchang, a graduate student of the Chinese Department of Tsinghua University, who had already graduated, to compose the music. Zhang Qingchang, who was in Yishan, Guangxi, sent the finished score to the song committee in December, which was unanimously approved and became the score of the National Southwest United University song.</p>
+                  <p>You can try playing the audio on the left to enjoy this impassioned school song.</p> 
+                <div id="box">
+                    <p class="animate">
+                        Lyrics:The long march of ten thousand miles, resigned from the five dynasties palace, temporarily stationed in Hengshan and Hunan, and became parting. The last resort is to transplant the quality of the sedge, and the blood of the Yuan is sprinkled all over our country. All the reed blowing, reciting in the mountain city, love. The vengeance of a thousand years will finally be executed. We need people to make a successful career. Even if the condition is hard, the ambition is hard to break. We are worried about the new nation's luck, and we are willing to endure our former philosophers. When the enemy is expelled, the sacred capital will be restored.
+                    </p>                
+                </div>
+                <br />
+                <hr>
+                <h2 id="section-3">·Logo & Flag</h2>
+                <input type="radio" value="t1" name="t1" id="test1" checked>
+                <input type="radio" value="t2" name="t1" id="test2">
+                <div id="card">
+             
+             
+                    <div class="inner_part">
+             
+                        <div id="c1">
+                            <img style="width: 100%; height: 100%; cursor: pointer;" src="images\logo.jpeg">
+                        </div>
+                        <div class="content " id="content1">
+                            <h3>Logo</h3>
+                            <p>
+                                The outline of the emblem is an equilateral triangle with the word "United University" written on it, and the three small corners of the design form a large triangle, and the three small corners are the school colors of Tsinghua and Nankai, respectively, and the school color of Peking University, black. The solidity of the triangle and the sharp edges represent the NASU motto "fortitude and perseverance", which means that the three universities are united and overcome difficulties together.
+                            </p>
+                        </div>
+            
+                    </div>
+                    <div class="inner_part">
+             
+                        <div id="c2">
+                            <img style="width: 100%; height: 100%; cursor: pointer;" src="images\flag.jpeg" alt="">
+                        </div>
+                        <div class="content " id="content2">
+                            <h3>Flag</h3>
+                            <p>
+                                The flag of the NASU is rectangular in shape, with a purple isosceles triangle (the school colors of Nankai and Tsinghua are purple), 4'6" high and 2'6" wide at the bottom, with the words "National Southwest United University" in black on the triangle (the school color of Peking University is black), and a white right-angle triangle on each waist of the triangle. The flag shown here was hand-embroidered in 1941 by the wife of Mr. John Ma, then director of NASU's athletic department.
+                            </p>
+                        </div>
+             
+                    </div>
+                   </div>
+                <br />
+                <br />
+                <hr>
+                <h2 id="section-4">·Student Clubs</h2>
+                <div class="demo" style="float: right; clear: both;" align="center">                
+                    <div class="demo1">                      
+                        <img src="images\club1.jpeg" alt=""/>
+                        <img src="images\club2.jpeg" alt=""/>
+                        <img src="images\club3.jpeg" alt=""/>
+                        <img src="images\club4.jpeg" alt=""/>
+                        <img src="images\club5.jpeg" alt=""/>
+                    </div>
+                </div>
+                <div>
+                    <p>There are many clubs in NASU, which can be classified into general and specialized clubs according to their functions, involving more than ten kinds of fields such as drama, sports, and debate.
+                        <br><br>NASU adopts the principle of student autonomy in the management of student associations. There is no interference in all aspects of the declaration, approval, and establishment of student clubs. Associations are completely required for student autonomy.
+                        <br><br>The political nature of the societies was reflected in their activities, which were the study and propaganda of communism and the Communist Party and the active propaganda against the war. The "Voice of the Group" of the society actively propagates the Party's "insistence on resistance and opposition to surrender" and "insistence on unity and opposition to division".
+                        <br><br>You can see the vibrant NASU students, led by their clubs, in the pictures.
+                    </p>
+                    </div>
+                <br />
+                <br />
+                <hr>
+                <h2 id="section-5">·Other Topics</h2><br>
+                <div>
+                    <div class="box-left">
+                    <button class="btn btn-1 btn-1a" onclick="location='Scale.html'">-Scale-</button>
+                    <button class="btn btn-1 btn-1a" onclick="location='Regulations.html'">-Regulations-</button>
+                    </div>
+                    <div class="box-eft">
+                    <button class="btn btn-1 btn-1a" onclick="location='Achievements.html'">-Achievements-</button>
+                    <button class="btn btn-1 btn-1a" onclick="location='School_Introduction_firstversion.html'">-Main page-</button>
+                    </div>
+                </div>
+                <br />
+                <hr>
+            </div>
+        </div> 
+    </body>
+</html>

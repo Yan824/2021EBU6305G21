@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Scale</title>
+        <title>Scale of NASU</title>
         <style type="text/css">
             body{
                 background-color: #010006;
@@ -150,6 +150,48 @@
             p{
                 color: white;
             }
+            .btn {
+			    border: none;
+			    font-family: inherit;
+			    font-size: inherit;
+			    color: inherit;
+			    background: 0 0;
+			    cursor: pointer;
+			    padding: 25px 80px;
+			    display: inline-block;
+			    margin: 5px;
+			    text-transform: uppercase;
+			    letter-spacing: 1px;
+			    font-weight: 700;
+			    outline: none;
+			    position: relative;
+			    transition: all .3s;
+                width: 350px;
+			}
+			.btn:after {
+			    content: '';
+			    position: absolute;
+			    z-index: -1;
+			    transition: all .3s;
+			}
+            .btn-1:hover {
+			    color: #0e83cd;
+				/* transform: scaleX(1.2); */
+				 /* background: red; */
+			}
+			.btn-1 {
+			    border: 3px solid #fff;
+			    color: #fff;
+			}
+			.btn-1a:hover {
+			    color: #0e83cd;
+			    background: #fff;
+			}
+            .box-left{
+                float: left;
+                position: relative;
+
+            }
         </style>
     </head>
     <body>
@@ -157,7 +199,7 @@
             <h1 style="color: #1E90FF;">Scale of NASU</h1>
         </div>
         <div>
-            <a class="back" onclick="location='School_Introduction_firstversion.html'" onmouseover="this.style.cursor='pointer'">Back to pevious page</a>
+            <a class="back" onclick="location='School_Introduction_firstversion.html'" onmouseover="this.style.cursor='pointer'">Back to main page</a>
         </div>
         <div id="content">
             <div class="left">
@@ -166,6 +208,7 @@
                     <li><a href="#section-2">Buildings</a></li>
                     <li><a href="#section-3">Teachers</a></li>
                     <li><a href="#section-4">Students</a></li>
+                    <li><a href="#section-5">Other Topics</a></li>
 
 
                </ul>
@@ -277,7 +320,20 @@
                 <br />
                 <br />
                 <hr>
-
+                <h2 id="section-5">Other Topics</h2>
+                <div>
+                    <div class="box-left">
+                    <button class="btn btn-1 btn-1a" onclick="location='Culture.html'">-Culture-</button>
+                    <button class="btn btn-1 btn-1a" onclick="location='Regulations.html'">-Regulations-</button>
+                    </div>
+                    <div class="box-eft">
+                    <button class="btn btn-1 btn-1a" onclick="location='Achievements.html'">-Achievements-</button>
+                    <button class="btn btn-1 btn-1a" onclick="location='School_Introduction_firstversion.html'">-Main page-</button>
+                    </div>
+                </div>
+                <br />
+                <hr>
+            </div>
             </div>
         </div> 
     </body>
