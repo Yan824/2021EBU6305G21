@@ -98,20 +98,20 @@ ul,li{
     transition: 0.5s ease;
 }
 
-.box-1 h2{
+.box-1 p{
     margin: 0;
     left: 0;
     bottom: 0;
     height: 7vh;
-    width:75%;
+    width:100%;
     background: rgba(248, 251, 254, 0.764);
     text-indent: 2em;
-    padding-right:100% ;
-    font-size: 15px;
-    line-height: 7vh;
+    padding-right:0 ;
+    font-size: 2vh;
+    /* line-height: 7vh; */
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     font-weight: normal;
     color: rgb(18, 18, 18)
 } 
@@ -123,7 +123,7 @@ ul,li{
     width: 14%;
     height: 69vh;
     background-color: rgba(117, 114, 114, 0.61);
-    font-size: 1.5vw;
+    font-size: 1.1vw;
 }
 
 .box-1 a {
@@ -273,6 +273,32 @@ ul,li{
     transition: 0.5s;
     /* z-index: 4; */
 } 
+#TangLan{
+    /* float: right; */
+    left: 79%;
+    width: 18%;
+    margin-top: 8vh;
+    height: 69vh;
+    background-color: rgba(117, 114, 114, 0.61);
+    opacity: 1;
+    position: absolute;
+    display: none;
+    transition: 0.5s;
+    /* z-index: 4; */
+} 
+#ShenCongW{
+    /* float: right; */
+    left: 79%;
+    width: 18%;
+    margin-top: 8vh;
+    height: 69vh;
+    background-color: rgba(117, 114, 114, 0.61);
+    opacity: 1;
+    position: absolute;
+    display: none;
+    transition: 0.5s;
+    /* z-index: 4; */
+} 
 
 #MeiYiQ{
     /* float: right; */
@@ -301,12 +327,57 @@ ul,li{
     transition: 0.5s;
     /* z-index: 4; */
 } 
+#ZhouPeiY{
+    left: 79%;
+    width: 18%;
+    margin-top: 8vh;
+    height: 69vh;
+    background-color: rgba(117, 114, 114, 0.61);
+    opacity: 1;
+    position: absolute;
+    display: none;
+    transition: 0.5s;
+}
+#LiangSiC{
+    left: 79%;
+    width: 18%;
+    margin-top: 8vh;
+    height: 69vh;
+    background-color: rgba(117, 114, 114, 0.61);
+    opacity: 1;
+    position: absolute;
+    display: none;
+    transition: 0.5s;
+}
+#LinHuiY{
+    left: 79%;
+    width: 18%;
+    margin-top: 8vh;
+    height: 69vh;
+    background-color: rgba(117, 114, 114, 0.61);
+    opacity: 1;
+    position: absolute;
+    display: none;
+    transition: 0.5s;
+}
+#WuYouX{
+    left: 79%;
+    width: 18%;
+    margin-top: 8vh;
+    height: 69vh;
+    background-color: rgba(117, 114, 114, 0.61);
+    opacity: 1;
+    position: absolute;
+    display: none;
+    transition: 0.5s;
+}
 .description{
     margin-top:2vh;
     margin-left: 2vw;
     margin-right: 2vw;
     background-color: rgba(248, 251, 254, 0.764);
     height: 35vh;font-size: 1.2vw;
+    text-align: left;
 }
 .famousP{
     width: 11vw;
@@ -314,6 +385,9 @@ ul,li{
     margin: 2vh 3.5vw;
 }
 @media only screen and (max-width:800px){
+    .h2{
+        font-size: 3vh;
+    }
     .background2{
         height: 120vh;
     }
@@ -343,12 +417,12 @@ ul,li{
         /* margin-top: 7vh; */
         /* margin-left: 3vw; */
         width: 85vw;
-        height: 15vh;
+        height: 19vh;
         margin-left: 5vw;
     }
     #JiangMengL{
         left: 3vw;
-        top:110vh;
+        top:114vh;
         margin-left: 3vw;
         width: 85vw;
         height: 25vh;
@@ -374,39 +448,81 @@ ul,li{
         margin-right: 2vw;
         width: 60vw;
         background-color: rgba(248, 251, 254, 0.764);
-        height: 20vh;font-size: 1.2vw;
+        height: 20vh;font-size: 2.5vh;
     }
    
     #ZhuziQ{
+        top:114vh;
         left: 3vw;
-        top:110vh;
         margin-left: 3vw;
         width: 85vw;
         height: 25vh;
     } 
     #FengYouL{
+        top:114vh;
         left: 3vw;
-        top:110vh;
+        margin-left: 3vw;
+        width: 85vw;
+        height: 25vh;
+    } 
+    #TangLan{
+        top:114vh;
+        left: 3vw;
+        margin-left: 3vw;
+        width: 85vw;
+        height: 25vh;
+    } 
+    #ShenCongW{
+        top:114vh;
+        left: 3vw;
         margin-left: 3vw;
         width: 85vw;
         height: 25vh;
     } 
     
     #MeiYiQ{
+        top:114vh;
         left: 3vw;
-        top:110vh;
         margin-left: 3vw;
         width: 85vw;
         height: 25vh;
     } 
     
     #WenYiD{
+        top:114vh;
         left: 3vw;
-        top:110vh;
         margin-left: 3vw;
         width: 85vw;
         height: 25vh;
     } 
+    #ZhouPeiY{
+        top:114vh;
+        left: 3vw;
+        margin-left: 3vw;
+        width: 85vw;
+        height: 25vh;
+    }
+    #LiangSiC{
+        top:114vh;
+        left: 3vw;
+        margin-left: 3vw;
+        width: 85vw;
+        height: 25vh;
+    }
+    #LinHuiY{
+        top:114vh;
+        left: 3vw;
+        margin-left: 3vw;
+        width: 85vw;
+        height: 25vh;
+    }
+    #WuYouX{
+        top:114vh;
+        left: 3vw;
+        margin-left: 3vw;
+        width: 85vw;
+        height: 25vh;
+    }
     .close1{
         left: 95%;
     }
