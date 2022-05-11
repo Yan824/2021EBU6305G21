@@ -14,8 +14,6 @@ h1{
 }
 
 .content{
-    margin-top: 20px; ;
-    overflow-y:scroll;
     font-size: 20px;
     position: relative;
     width: 100%;
@@ -29,11 +27,12 @@ h1{
 }
 
 .content p{
-    margin: 5% 15% 5% 15%;
+    margin: 0% 15% 0% 15%;
     color: aliceblue;
 }
 .content img{
     width: 40%;
+    height: auto;
 }
 
 .back{
@@ -48,13 +47,18 @@ h1{
 
 
 .menubar{
-    left: 12.5%;
-    width: 75%;
+    left: 15%;
+    width: 70%;
     margin: 0;
     padding: 0;
+    align-self: center;
+    font-size: 18px;
     /* background-color: rgb(172, 128, 69); */
 }
 .menubar ul{
+    left: 20%;
+    align-items: center;
+    align-self: center;
     padding: 0;
     margin: 0;
     position: relative;
@@ -63,7 +67,7 @@ h1{
     line-height: 45px;
     background-color: rgba(149, 141, 133, 0.763);
 }
-.menubar ul li{
+.menubar ul li{ 
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     z-index: 3; 
@@ -86,7 +90,6 @@ h1{
 .menubar li:hover ul li a:hover,
 .menubar ul li a:hover{
     height: 100%;
-    
     background:rgba(182, 225, 220, 0.685);
     /* color: #000; */
 }

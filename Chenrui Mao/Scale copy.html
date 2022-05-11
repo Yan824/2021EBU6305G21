@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Scale</title>
+        <style type="text/css">
+            body{
+                background-color: #010006;
+            }
+            .back{
+                position: relative;
+                left: 10%;
+                top: 50%;
+                width: 35px;
+                height: 35px;
+                background: url(img/R-C.jfif);
+                background-size:contain ;
+            }
+            .top{
+                background-image: url("images/scale_title.jpeg");
+                background-size:100% 100%;
+                width: 80%;
+                height: 200px;
+                text-align: center;
+                line-height: 200px;
+                margin: 0 auto;
+                background-color: #E6E6FA;
+            }
+            .left{
+                width: 15%;
+                position: fixed;
+                left: 8%;
+            }
+            .right{
+                width: 65%;
+                float: right;
+                margin-right: 10%;
+            }
+            ul li{
+                width: 150px;
+                height: 25px;
+                line-height: 25px;
+                padding: 5px;
+                text-align: center;
+                list-style: none;
+                border:1px solid #DCDCDC;
+            }
+            .teachertable{
+                width: 80%;
+                color: white;
+                border: 5px;
+                border-color:white;
+                margin-left: 20px;
+                border-collapse: collapse;
+                align-self: center;
+            }
+            .teacherth{
+                height: 50px;
+                border:2px #f10d0d;
+            }
+            td{
+                text-align: center;
+                border:2px #f10d0d;
+                
+            }
+            #card {
+            width: 80%;
+            height: 300px;
+            box-shadow: 2px 3px rgba(0, 0, 0, 0.137);
+            position: relative;
+        }
+ 
+        .inner_part {
+            width: 800px;
+            height: 300px;
+            position: absolute;
+        }
+ 
+ 
+        #c1,
+        #c2,
+        #c3 {
+            opacity: 0;
+            width: 300px;
+            height: 250px;
+            margin: 25px;
+            border-radius: 10px;
+            overflow: hidden;
+ 
+            float: left;
+ 
+        }
+ 
+ 
+        .content {
+            width: 440px;
+            height: 250px;
+            opacity: 0;
+            float: left;
+            margin: 0px;
+        }
+        #slider{
+            position: absolute;
+            z-index: 99;
+            right: 25px;
+            bottom: 25px;
+        }
+ 
+        #c1 {
+            background-color: rgb(0, 47, 167);
+        }
+ 
+        #c2 {
+            background-color: rgb(255, 0, 0);
+        }
+ 
+        #c3 {
+            background-color: rgb(179, 255, 0);
+        }
+ 
+        #test1:checked~#card .inner_part #c1,
+        #test2:checked~#card .inner_part #c2,
+        #test3:checked~#card .inner_part #c3 {
+            opacity: 1;
+        }
+ 
+        #test1:checked~#card .inner_part #content1,
+        #test2:checked~#card .inner_part #content2,
+        #test3:checked~#card .inner_part #content3 {
+            opacity: 1;
+        }
+            a{
+                text-decoration: none;/*去除a标签内容的下划线*/
+                color: #1E90FF;
+            }
+            li:hover{
+                background-color: #F5F5F5;
+            }
+            a:active{
+                color: #AFEEEE;
+            }
+            h2{
+                color: #1E90FF;
+            }
+            h3{
+                color: #1E90FF;
+            }
+            p{
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <a href="Pic4.html">
+                <button class="back"></button>
+            </a>
+        </div>
+        <div class="top">
+            <h1 style="color: #1E90FF;">Scale of NASU</h1>
+        </div>
+        
+        <div id="content">
+            <div class="left">
+                <ul class="tab">
+                    <li><a href="#section-1">Departments</a></li>
+                    <li><a href="#section-2">Buildings</a></li>
+                    <li><a href="#section-3">Teachers</a></li>
+                    <li><a href="#section-4">Students</a></li>
+
+
+               </ul>
+            </div>
+            <div class="right">
+                <h2 id="section-1">·Departments</h2>
+                <p>The faculties and departments of National Southwest Associated University were slightly developed and adjusted on 
+                    the basis of the original faculties and departments of National Changsha Temporary University.</p>
+                <br>
+                <div style="float: right; clear: both;" align="center">
+                <br><img src="images/scale_exp.jpeg" width="200px" alt="" hspace="8"><p style="color: #1E90FF;">A chemistry teacher was<br>conducting an <br>experiment outside</p><br>
+                </div>
+                <p>At the end of July 1938, in accordance with the order of the Ministry of Education of China, the Department of Aeronautical Engineering was established on the basis of the Aeronautical Engineering Section of the Department of Mechanical Engineering. 
+                In early August 1938, teachers College was established in accordance with the ministry's order. The "education" part of the Department of Philosophy, Psychology and Education of the College of Arts was merged with the Department of Education of Yunnan University to form the Department of Education, which was put under the normal College. 
+                The department of Philosophical psychology education was changed to the Department of Philosophical Psychology, still a faculty of arts. The normal College has departments of civic training, Chinese literature, English, history and geography, mathematics, physics and chemistry.
+                </p>
+                <br>
+                <p> On June 1940, the Department of History and Sociology was divided into the Department of History and the Department of Sociology in accordance
+                 with the order of the Ministry of Education of the Republic of China. After 1941, the Department of Sociology was placed under the Faculty of Law and Business, while the Department of History remained in the Faculty of Arts.</p>
+                <br />
+                <div style="float: right; clear: both;" align="center">
+                    <br><img src="images/scale_school.jpeg" width="200px" alt="" hspace="8"><p style="color: #1E90FF;">Affiliated Middle School of NASU</p><br>
+                    </div>
+                <p>In the autumn of 1940, the affiliated school of Normal College was opened, with primary school and junior high school at first. Later, senior high school was developed year by year, renamed as the affiliated middle school and the Affiliated primary school. 
+                    In 1944, National Southwest Associated University (NSWU) resumed its name of normal education specialty. The university consisted of 5 colleges, 26 departments, 2 specialties and 1 pre-study class, making it one of the largest institutions of higher learning in China at that time.</p>
+                <br />
+                <br />
+                <hr>
+
+                <h2 id="section-2">·Buildings</h2>
+                <input type="radio" value="t1" name="t1" id="test1" checked>
+                <input type="radio" value="t2" name="t1" id="test2">
+                <input type="radio" value="t3" name="t1" id="test3">
+                <div id="card">
+             
+             
+                    <div class="inner_part">
+             
+                        <div id="c2">
+                            <img style="width: 100%; height: 100%; cursor: pointer;" src="images\scale_buildings2.jpeg">
+                        </div>
+                        <div class="content " id="content2">
+                            <h3>Teaching Environment</h3>
+                            <p>
+                                The building committee decided to build some three-story brick houses based on the teaching needs and the available construction funds. During the construction process, the tin roofs were not available and the building funds were not available, so the student dormitories had to be roofed with thatch, which was completed in April 1939. In addition to the library and the two canteens, only the classrooms were left with tin roofs, and the student dormitories and offices were all thatched.
+                            </p>
+                        </div>
+            
+                    </div>
+                    <div class="inner_part">
+             
+                        <div id="c1">
+                            <img style="width: 100%; height: 100%; cursor: pointer;" src="images\scale_buildings1.jpeg" alt="">
+                        </div>
+                        <div class="content " id="content1">
+                            <h3>Building Distribution</h3>
+                            <p>
+                                The new school building is located in the northwest of Kunming, built on both sides of the road around the city, covering an area of more than 120 acres. The north side of the road is called the north area, covering a wider area, the north school gate for two wooden gates. The dirt road divides the north district into two parts, east and west. The eastern half is larger, with a concentration of classrooms, offices of various departments, library, and east and west cafeterias. The western half is the student dormitory and the sports field.
+                            </p>
+                        </div>
+             
+                    </div>
+                    <div class="inner_part">
+             
+                        <div id="c3">
+                            <img style="width: 100%; height: 100%; cursor: pointer;"src="images\scale_buildings3.jpeg" alt="">
+                        </div>
+                        <div class="content " id="content3">
+                            <h3>Destroyed and Rebuilt</h3>
+                            <p>
+                                On September 28, 1938, the staff dormitory of the National Southwest United University was bombed, and on October 6, the 89th Standing Committee discussed and decided to relocate the two colleges of grammar and one of the colleges of teacher training to the Panlong Temple in Jining, and to prepare for the construction of the entire school building in the area of Panlong Temple, so as to prepare for the relocation of other colleges one after another. Most of the images recorded now are of the reconstructed NASU.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <hr>
+                <h2 id="section-3">·Teachers</h2>
+                <p>According to the "History of Southwest United University" edited by the Beijing Alumni Association in 1996, there were 3,750 students and faculty members, 370 teachers, 400 staff (including doctors and technicians), and 400 police officers, including 200 full-time administrators. There were more than 300 professors and associate professors who taught at the National Southwest United University.
+                    In 1939, for example, there were 269 teachers in the university, including 89 from Peking University, 150 from Tsinghua University, and 30 from Nankai. Here are some famous professors.</p>
+                    <table class="teachertable">
+                        <tr>
+                            <th class="teacherth">Affiliated Departments</th>
+                            <th class="teacherth">Professor Directory</th>
+                        </tr>
+                        <tr>
+                            <td>Standing Committee</td>
+                            <td><a href="https://baike.baidu.com/item/%E8%92%8B%E6%A2%A6%E9%BA%9F/2365100">Menglin</a> , Mei Yiqi, Zhang Boling</td>
+                        </tr>
+                        <tr>
+                            <td>Faculty of arts</td>
+                            <td><a href="https://baike.baidu.com/item/%E6%9C%B1%E8%87%AA%E6%B8%85/106017">Zhu Ziqing</a>, Feng Youlan, Wen Yiduo, Qian Zhongshu</td>
+                        </tr>
+                        <tr>
+                            <td>Faculty of Science</td>
+                            <td>Hua Luogeng, <a href="https://baike.baidu.com/item/%E9%99%88%E7%9C%81%E8%BA%AB/602147">Chen Xingshen</a>, Zhou Peiyuan</td>
+                        </tr>
+                    </table>
+                    <br />
+                    <br />   
+                <hr>
+                <h2 id="section-4">·Students</h2>
+                <p>From 1938 to 1946, the school graduated a total of 3,343 students. According to the "History of National Southwest United University" edited by the Beijing Alumni Association in 1996, from 1937 to 1946, a total of 8,000 students passed the entrance examination of the university, and eventually nearly 2,500 undergraduates and about 200 specialists graduated from the university; 1,280 undergraduates and 74 postgraduates graduated from Peking University, Tsinghua University and Nankai University. In total, about 4,000 students graduated, which was the largest number of graduates in China at that time.</p>
+                <p>During the eight years of the war, more than 1,100 students from the National Southwest United University joined the military, of which 834 are engraved on the back of the monument of the National Southwest United University, including many young people who took the initiative to join the military, including <a href="https://baike.baidu.com/item/%E6%A2%85%E7%A5%96%E5%BD%A6">Mei Zuyan</a> , son of Tsinghua University President Mei Yiqi, a member of the committee of the United University. In addition to serving as interpreters, NASU students joined the Chinese Expeditionary Force and the Air Force. Between 1942 and 1945, 1,500 Chinese and American soldiers shed their blood to ensure the smooth passage of the "Hump" air route. Among them were NASU students, according to records.</p>
+                <img style="width: 100%; height: 100%; cursor: pointer; align-items: center;"src="images\scale_stu.jpeg">
+                <br />
+                <br />
+                <br />
+                <br />
+                <hr>
+
+            </div>
+        </div> 
+    </body>
+</html>

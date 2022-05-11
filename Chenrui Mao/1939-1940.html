@@ -7,7 +7,7 @@
 </head>
 
 	
-<body>
+<body style="background-image: url(img/bgr.png); background-repeat: no-repeat; background-size: 100% 100%;">
     <script>
 		function displayWindowB() {
 			document.getElementById("Battleinfo").style.opacity = "1";
@@ -34,6 +34,9 @@
         </ul>
     </div>
     <br>
+    <div class="bottom1">The time map of NASU</div>
+    <div class="schoolLogo"> 
+    </div>
         <div class="figurenav">
             <ul>
                 <li class="view">
@@ -68,18 +71,18 @@
             </ul>
         </div>
         <br>
-        <div class="main" style = "background-image: url(img/1939-1940.jpg);background-size: 75% 100%;">
+        <div class="main" style = "background-image: url(img/1939-1940.png);background-size: 75% 100%;">
             <button id="Battle" onclick="displayWindowB()"></button>
             <button id="YunNan" onclick="displayWindowY()"></button>
             <div id="Battleinfo">
-                Strategic stalemate
+                Location:Battle Front<br>Strategic stalemate
                 <button class="close" onclick="hideWindowB()"></button>
                 <br>
                 <p>WW2 broke out in 1939. In China battle ground, the war began to transfrom into a Strategic stalemate...</p>
             <a class="jump" href="SS.html">Click to see more</a>
             </div>
             <div id="YunNaninfo">
-                Expansion of school
+                Location:YunNan<br>Expansion of school
                 <button class="close" onclick="hideWindowY()"></button>
                 <br>
                 <p>The university starts to develop...</p>

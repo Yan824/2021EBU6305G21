@@ -133,7 +133,30 @@
 
 .figurenav{
     width: 100%;
-	height: 200px;
+	height: 150px;
+}
+.figurenav ul{
+    width: 100%;
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0 0;
+}
+.figurenav ul li{
+    float: left;
+    clear: none;
+    margin-right: 1%;
+    padding: 0;
+    width: 24%;
+    height: 100%;
+}
+.view img{
+    width: 100%;
+    height: 150px;
+    transition: all 0.2s linear;
+}
+.view:hover img{
+    transform: scale(1.1);
 }
 .view{
     position: relative;
@@ -161,28 +184,7 @@
     opacity: 1;
     text-decoration: none;
 }
-.figurenav ul{
-    list-style: none;
-    float: left;
-    margin: 0;
-    padding: 0 0;
-}
-.figurenav ul li{
-    float: left;
-    clear: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    height: auto;
-}
-.view img{
-    width: 100%;
-    height: 100%;
-    transition: all 0.2s linear;
-}
-.view:hover img{
-    transform: scale(1.1);
-}
+
 .main{
     height: 1000px;
     background-repeat: no-repeat;
@@ -333,3 +335,29 @@ button:focus{
  outline:none;
 }
 
+.schoolLogo{
+    z-index: 3;
+    display: block;
+    left: 3%;
+    top: 9vh;
+    background-color: rgba(240, 248, 255, 0.626);
+    background: url("img/SchoolLog.png"); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+}
+
+.bottom1{
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    top: 65px;
+    left: 100px;
+    height: 80px;
+    width: 50%;
+    background-color: rgba(153, 194, 230, 0.615);
+    position: absolute;
+    font-family: "Microsoft Yahei";
+    font-size: 3vw;
+    }
