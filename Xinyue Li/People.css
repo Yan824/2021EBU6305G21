@@ -1,0 +1,81 @@
+body{
+    background-color: #010006;
+}
+
+.back{
+    position: relative;
+    left: 3vw;
+    top: 50%;
+    width: 3vw;
+    height: 3vw;
+    background: url(img-lxy/R-C.jfif);
+    background-size:contain ;
+    background-repeat: no-repeat;
+    float: left;
+}
+.back:active{
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.back:focus{
+    outline:none;
+}
+.top{
+    background-image: url("img-lxy/wireframe.png");
+    background-size:100% 100%;
+    width: 80%;
+    height: 15vh;
+    text-align: center;
+    line-height: 15vh;/*将文本高度设置为和容器一样的高度，使文本垂直居中*/
+    margin: 0 auto;/*设置div容器居中*/
+    background-color: #E6E6FA;
+}
+.left{
+    width: 15%;
+    position: fixed;/*设置左侧导航栏相对于浏览器窗口固定*/
+    left: 6%;
+    margin-right: 3vw;
+}
+.left ul li{
+    margin-right: 3vw;
+    width: 10vw;
+    height: 5vh;
+    line-height: 5vh;/*将文本高度设置为和容器一样的高度，使文本上下距离一样*/
+    padding: 5px;
+    text-align: center;/*文字居中*/
+    list-style: none;/*去掉列表项前面的圆黑点*/
+    border:1px solid #DCDCDC;
+    overflow: hidden;
+}
+.left a{
+    text-decoration: none;/*去除a标签内容的下划线*/
+    color: #1E90FF;
+}
+.left li:hover{
+    background-color: #F5F5F5;
+}
+.left a:active{
+    color: #AFEEEE;
+}
+.right{
+    margin-left: 1%;
+    width: 65%;
+    float: right;
+    margin-right: 10%;
+}
+h2{
+    color: #1E90FF;
+}
+p{
+    color: white;
+    text-align:justify;
+}
+.photobox{
+    float: right;
+    width: 15vw;
+    /* border-color: #1E90FF;
+    border-style: solid; */
+    margin-left: 3vw;
+    height: 45vh;
+
+}
