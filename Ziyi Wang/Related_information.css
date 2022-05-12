@@ -12,7 +12,7 @@ body{
     text-align: left;
     line-height: 200px;
     margin: 0 auto;
-    
+
 }
 .schoolLogo{
     z-index: 3;
@@ -90,9 +90,7 @@ body{
     background-color: #DCDCDC;
     width: 10%;
 }
-.Title3{
-    background-color:dimgrey;
-}
+
 .left ul li{
     width: 150px;
     height: 25px;
@@ -114,6 +112,7 @@ body{
 .left a:active{
     color: #AFEEEE;
 }
+
 .header{
     margin: 0;
     padding: 0;
@@ -162,7 +161,9 @@ body{
     width: 20%;
     background-color: rgba(203, 203, 241, 0.51);
 }
-
+.intro{
+    background-color: rgba(153, 194, 230, 0.615);
+}
 .intro ul{
     list-style: none;
     float: left;

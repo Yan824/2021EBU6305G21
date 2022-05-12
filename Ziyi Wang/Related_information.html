@@ -4,7 +4,22 @@
         <meta charset="utf-8" />
         <title>Related information</title>
         <link type = "text/css" href = "Related_information.css" rel="stylesheet" />
-
+        <link rel="stylesheet" href="autoPlay.css">
+        <script src="autoPlay.js"></script>
+        <script>
+            window.onload = function () {
+                const options = {
+                    id: 'lb-1',              
+                    speed: 600,              
+                    delay: 3000,             
+                    direction: 'left',       
+                    screenKeyEvent: true,   
+                    screenTouchEvent: true
+                }
+                const lb = new Lb(options);
+                lb.start();
+            }
+        </script>
     </head>
     <body>
         <div class="header">
@@ -35,12 +50,58 @@
         <div id="content">
             <div class="left">
                 <ul class="tab">
-                    <li><a href="#section-1">Intro<p/a></li>
-                    <li><a href="#section-2">Video</a></li>
+                    <li><a href="#section-1">Video<p/a></li>
+                    <li><a href="#section-2">Intro</a></li>
             </ul>
             </div>
             <div class="right">
-                <h2 id="section-1" class="subTitle">Intro</h2>
+                <h2 id="section-1"  class="subTitle">Video</h2>
+                <div class="intro" id="section-2" name="movie">
+                
+                    <div class="lb-box" id="lb-1">
+
+                        <div class="lb-content">
+                            <div class="lb-item active">
+                                <a href="https://www.bilibili.com/bangumi/play/ep328592">
+                                    <img src="img/Foeveryoung.png" alt="picture loss">
+                                    <span>Forever Young<br>The film tells the story of four young people (one of them is a student in NSAU) of different generations, full of expectations for their youth, but also in the midst of contradictions and struggles due to the changes of the times, who eventually find their true selves.</span>
+                                </a>
+                            </div>
+                            <div class="lb-item">
+                                <a href="https://www.bilibili.com/bangumi/play/ep328592">
+                                    <img src="img/Foeveryoung1.png" alt="picture loss">
+                                    <span>Forever Young<br>The film tells the story of four young people (one of them is a student in NSAU) of different generations, full of expectations for their youth, but also in the midst of contradictions and struggles due to the changes of the times, who eventually find their true selves.</span>
+                                </a>
+                            </div>
+                            <div class="lb-item">
+                                <a href="https://www.bilibili.com/video/BV1zf4y1L7v9">
+                                    <img src="img/NSAU.png" alt="picture loss">
+                                    <span>Documentary of NSAU<br>Made to commemorate the 80th anniversary of the founding of NSAU in Yunnan, this five-part film uses diaries, articles and interviews with people to recreate a series of NSAU's journey from the preparation and relocation of the school to the daily teaching, life and research of its staff and students.</span>
+                                </a>
+                            </div>
+                            
+                            <div class="lb-item">
+                                <a href="https://www.bilibili.com/video/BV1jt411w7yL">
+                                    <img src="img/NSAU_Anthem.png" alt="picture loss">
+                                    <span>NSAU Anthem<br>On July 3, 1938, the Ministry of Education ordered all schools to submit their school songs and school mottos, and in October, the Standing Committee of NSAU established the "School Song and School Motto Committee", appointing Feng Youlan, Zhu Ziqing, Luo Changpei, Luo Yong and Wen Yiduo as members, with Feng Youlan as the chairman. The Lyrics of 'Full River Red</span>
+                                </a>
+                            </div>
+                        </div>
+                        <ol class="lb-sign">
+                            
+                            <li class="active">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                        </ol>
+                        <div class="lb-arrow">
+                            <div class="lb-ctrl left"><</div>
+                            <div class="lb-ctrl right">></div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <h2 id="section-2" class="subTitle">Intro</h2>
                 <div class="intro" id="section-1" name="intro" style="height: 450px;">
                     <ul>
                         <li class="briefIntro">
@@ -90,56 +151,7 @@
                     
                 </div>
                 <hr>
-                <h2 id="section-2"  class="subTitle">Video</h2>
-                <div class="intro" id="section-2" name="movie">
-                
-                <ul>
-                    <li class="briefIntro">
-                        <a href="https://www.bilibili.com/bangumi/play/ep328592">
-                            <img src="img/Foeveryoung.png" alt="Forever Young">
-                            </a>
-                            <h2 class="Title3">Forever Young</h2>
-                            <div class="text">  
-                                
-                                <p>The film tells the story of four young people (one of them is a student in NSAU) of different generations, full of expectations for their youth, but also in the midst of contradictions and struggles due to the changes of the times, who eventually find their true selves.</p>    
-                                <p>Click Picture to Watch Video</p> 
-                                </div>
-                    </li>
-                    <li class="briefIntro">
-                        <a href="https://www.bilibili.com/video/BV1zf4y1L7v9">
-                            <img src="img/NSAU.png" alt="documentary">
-                            </a>
-                            <h2 class="Title3">Documentary of NSAU</h2>
-                            <div class="text">  
-                                
-                                <p>The documentary NSAU will showcase and interpret this timelessly fascinating and spiritually powerful university by using several symbiotic sets of relationships in the historical storm, namely Tsinghua, Peking and Nankai; the ivory tower and war-torn China; academia, education and war; teachers and students and the war effort; and NSAU and Yunnan.</p>  
-                                <p>Click Picture to Watch Video</p> 
-                                </div> 
-                    </li>
-                    <li class="briefIntro">
-                        <a href="https://www.bilibili.com/video/BV1jt411w7yL">
-                            <img src="img/NSAU_Anthem.png" alt="song">
-                            </a>
-                            <h2 class="Title3">NSAU Anthem</h2>
-                            <div class="text1">                                
-                                <p>In October,1938, the Standing Committee of NSAU established the "School Song and School Motto Committee", appointing Feng Youlan, Zhu Ziqing, Luo Changpei, Luo Yong and Wen Yiduo as members, with Feng Youlan as the chairman. The Lyrics of 'Full River Red‘</p> 
-                                <p>Click Picture to Watch Video</p>    
-                            </div>  
-                    </li>
-                    <li class="briefIntro">
-                        <a href="https://www.bilibili.com/video/BV1zf4y1L7v9">
-                            <img src="img/NSAU.png" alt="documentary">
-                            </a>
-                            <div class="text1">  
-                                <h2 class="Title3">Documentary of NSAU</h2>
-                                <p></p>  
-                                <p>Click Picture to Watch Video</p> 
-                                </div>  
-                    </li>
-                    
 
-                </ul>
-                </div>
             </div>
 
 
