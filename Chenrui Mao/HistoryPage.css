@@ -111,7 +111,7 @@
     clear: none;
     margin: 0;
     padding: 0;
-    width: 14.2%;
+    width: 14.285714%;
     height: auto;
 }
 .navigation ul li:hover a,
@@ -174,15 +174,24 @@
 	height: 100%;
     overflow: hidden;
     opacity: 0;
-    color: white;
+    color: rgba(8, 96, 212, 0.551);
+    font-size: 1.5vw;
     transition: all 0.5s ease-in-out;
     /* background-color: rgb(146, 240, 240); */
     filter: blur();
     z-index: 0;
+    text-align: center;
 }
 .view:hover .mask{
     opacity: 1;
     text-decoration: none;
+}
+
+input{
+    width: 100%;
+    scroll-behavior: smooth;
+    scrollbar-color: blue;
+    align-items: center;
 }
 
 .main{
