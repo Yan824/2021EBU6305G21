@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Content</title>
+        <style type="text/css">
+            body{
+                background-color: #FFFAFA;
+            }
+            .top{
+                width: 80%;
+                height: 200px;
+                text-align: center;
+                line-height: 200px;/*将文本高度设置为和容器一样的高度，使文本垂直居中*/
+                margin: 0 auto;/*设置div容器居中*/
+                background-color: #E6E6FA;
+            }
+            .left{
+                width: 15%;
+                position: fixed;/*设置左侧导航栏相对于浏览器窗口固定*/
+                left: 8%;
+            }
+            .right{
+                width: 65%;
+                float: right;
+                margin-right: 10%;
+            }
+            ul li{
+                /*ul是块级元素，可以设置宽度和高度*/
+                width: 150px;/*设置li的宽度*/
+                height: 25px;
+                line-height: 25px;/*将文本高度设置为和容器一样的高度，使文本上下距离一样*/
+                padding: 5px;
+                text-align: center;/*文字居中*/
+                list-style: none;/*去掉列表项前面的圆黑点*/
+                border:1px solid #DCDCDC;/*设置边框宽度为1px,实线,颜色为darkgray*/
+            }
+            a{
+                text-decoration: none;/*去除a标签内容的下划线*/
+                color: #1E90FF;
+            }
+            li:hover{
+                background-color: #F5F5F5;
+            }
+            a:active{
+                color: #AFEEEE;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top">
+            <h1>Scale of NASU</h1>
+        </div>
+        <div id="content">
+            <div class="left">
+                <ul class="tab">
+                    <li><a href="#section-1">Departments</a></li>
+                    <li><a href="#section-2">Buildings</a></li>
+                    <li><a href="#section-3">Teachers</a></li>
+                    <li><a href="#section-4">Students</a></li>
+
+
+               </ul>
+            </div>
+            <div class="right">
+                <h2 id="section-1">Departments</h2>
+                <div style="float: left; clear: both;" align="center">
+                <p>The faculties and departments of National Southwest Associated University were slightly developed and adjusted on 
+                    the basis of the original faculties and departments of National Changsha Temporary University.</p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <hr>
+                </div>
+                <h2 id="section-2">Buildings</h2>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <hr>
+                <h2 id="section-3">Teachers</h2>
+                <br />
+                <br />
+                <br />
+                <br />
+                <hr>
+                <h2 id="section-4">Students</h2>
+                <br />
+                <br />
+                <br />
+                <br />
+                <hr>
+
+            </div>
+        </div> 
+    </body>
+</html>

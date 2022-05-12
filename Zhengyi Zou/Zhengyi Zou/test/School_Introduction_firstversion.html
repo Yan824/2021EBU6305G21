@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0/>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>School Introduction</title>
+    <style>
+        .subtitle{
+        width: 100%;
+        height: 100px;
+        border-style: hidden;
+        font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;;
+        font-weight: bold;
+        color: black;
+        text-align: center;
+        font-size: 50px;
+        }
+        .background{
+            height: 800px;
+            background-image: url("images/bk2.png");
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+        }
+        ul,li{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menubar{
+            margin: 0;
+            padding: 0;
+            /* background-color: rgb(172, 128, 69); */
+        }
+        .menubar ul{
+            padding: 0;
+            margin: 0;
+            position: relative;
+            display: flex;
+            height: 45px;
+            line-height: 45px;
+            background-color: rgba(149, 141, 133, 0.763);
+        }
+        .menubar ul li{
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            z-index: 3; 
+            list-style: none;
+            width: 20%;
+            text-align: center;
+            border-radius: 10px;
+            color: rgb(255, 255, 255);
+        }
+        .menubar ul li:hover a,
+        .menubar ul li a{
+            z-index: 3;
+            width: 100%;
+            height: 100%;
+            display: block;
+            color: aliceblue;
+            text-decoration: none;
+            display: block; 
+        }
+        .menubar li:hover ul li a:hover,
+        .menubar ul li a:hover{
+            height: 100%;
+            
+            background:rgba(182, 225, 220, 0.685);
+            /* color: #000; */
+        }
+        .admin{
+            z-index: 1;
+            height: 45px;
+            position: absolute;
+            left: 20%;
+            top: 0;
+            width: 20%;
+            background-color: rgba(203, 203, 241, 0.51);
+        }
+        .leftarrow{
+            background-image: url("images/leftarrow.png");
+            background-size:100% 100%;
+            height: 150px;
+            width: 300px;
+            position: absolute;
+            top: 82%;
+            left: 20%;
+            border-style: hidden;
+        }
+        .rightarrow{
+            background-image: url("images/rightarrow.png");
+            background-size:100% 100%;
+            height: 150px;
+            width: 300px;
+            position: absolute;
+            top: 82%;
+            left: 55%;
+            border-style: hidden;
+        }
+        #welcome{
+            height: 500px;
+            width: 400px;
+            position: absolute;
+            top: 40%;
+            left: 33%;
+            border-color: rgb(207, 236, 246);
+            text-align: center;
+            font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;;
+            font-weight: bold;
+            color: rgb(160, 184, 220);
+            font-size: 50px;
+            opacity: 1;
+        }
+        #scale{
+            background-image: url("images/scale.jpeg");
+            background-size:100% 100%;
+            height: 300px;
+            width: 400px;
+            position: absolute;
+            top: 38%;
+            left: 33%;
+            border-color: rgb(207, 236, 246);
+            text-align: center;
+            opacity: 0;
+            
+        }
+        #spirits{
+            background-image: url("images/spirits.jpeg");
+            background-size:100% 100%;
+            height: 300px;
+            width: 400px;
+            position: absolute;
+            top: 38%;
+            left: 33%;
+            border-color: rgb(207, 236, 246);
+            text-align: center;
+            opacity: 0;
+        }
+        #regulations{
+            background-image: url("images/regulations.jpeg");
+            background-size:100% 100%;
+            height: 300px;
+            width: 400px;
+            position: absolute;
+            top: 38%;
+            left: 33%;
+            border-color: rgb(207, 236, 246);
+            text-align: center;
+            opacity: 0;
+        }
+        #achievements{
+            background-image: url("images/achievements.jpeg");
+            background-size:100% 100%;
+            height: 300px;
+            width: 400px;
+            position: absolute;
+            top: 38%;
+            left: 33%;
+            border-color: rgb(207, 236, 246);
+            text-align: center;
+            opacity: 0;
+        }
+        .box-1{
+            height: 400px;
+            width: 200px;
+            position: absolute;
+            left: 2%;
+            top: 20%;
+            border-style: hidden;
+        }
+        
+        .box-2{
+            height: 400px;
+            width: 200px;
+            position: absolute;
+            left: 76%;
+            top: 20%;
+            border-style: hidden;
+        }
+
+        .button{
+            height: 50px;
+            text-align: center;
+            margin: 100px;
+            line-height: 46px;
+            background: #2e82ff7a;
+            color: #ffffff;
+            font-size: 18px;
+            border-radius: 25px;
+            animation: zoomIn 1.5s infinite;
+
+        }
+        @keyframes zoomIn {
+            60% {
+            transform: scale(1.2);
+            }
+            100% {
+            transform: scale(1);
+            }
+        }
+
+        button:active{
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+        }
+        button:focus{
+        outline:none;
+        }
+        ul li{
+        list-style:none;
+        }
+        #container {
+            height: 600px;
+            width: 400px;
+            position: absolute;
+            top: 50%;
+            left: 33%;
+            border-color: rgb(246, 213, 207);
+            text-align: center;
+            font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;;
+            font-weight: bold;
+            color: rgb(239, 85, 85);
+            font-size: 50px;
+            opacity: 1;
+}
+
+#flip {
+  height: 70px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color:#fff;
+  padding:4px 12px;
+  height: 45px;
+  margin-bottom:40px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+p {
+  position:fixed;
+  width:100%;
+  bottom:30px;
+  font-size:12px;
+  color:#999;
+  margin-top:200px;
+}
+.schoolLogo{
+ z-index: 3;
+ display: block;
+ position: absolute;
+ left: 3%;
+ top: 9vh;
+ background-color: rgba(240, 248, 255, 0.626);
+ background: url("images/logo.jpeg"); 
+ background-repeat: no-repeat;
+ background-size: contain;
+ width: 10%;
+ height: 20vh;
+ 
+}
+.schoolName{
+ white-space:nowrap;
+ z-index: 3;
+ padding: 0;
+ margin: 0;
+top: 10vh;
+left: 13%;
+ height: 6vh;
+ width: 23%;
+ line-height: 6vh;
+ position: absolute;
+ font-family: "Microsoft Yahei";
+ font-size: 0.8vw;
+ color: rgb(43, 47, 76);
+ text-align: center;
+ font-weight: bold;
+ background-color: rgba(240, 248, 255, 0.626); 
+}
+.bottom1{
+ z-index: 2;
+ padding: 0;
+ margin: 0;
+  top: 10vh;
+ left: 13%;
+ height: 16vh;
+ width: 30%;
+ background-color: rgba(153, 194, 230, 0.615);
+ position: absolute;
+
+}
+.title1{
+ white-space:nowrap;
+ z-index: 3;
+ padding: 0;
+ margin: 0;
+ position: absolute;
+ top: 16vh;
+ left: 15%;
+ height: 10vh;
+ width:28%;
+ text-align: center;
+ display: block;
+ background-color: rgba(240, 248, 255, 0.626);
+ font-family: "Microsoft Yahei";
+ font-weight: bold;
+ line-height: 10vh;
+ font-size: 3vw;
+}
+        
+    </style>
+
+ 
+    </head>
+
+    <body>
+        <script> 
+            //显示悬浮层 
+            function showScale(){ 
+            document.getElementById("scale").style.opacity="1"; 
+            document.getElementById("container").style.opacity="0"; 
+            } 
+            //隐藏悬浮层 
+            function hiddenScale(){ 
+            document.getElementById("scale").style.opacity="0";
+            document.getElementById("container").style.opacity="1";
+            } 
+            function showSpirits(){ 
+            document.getElementById("spirits").style.opacity="1";
+            document.getElementById("container").style.opacity="0"; 
+            } 
+            function hiddenSpirits(){ 
+            document.getElementById("spirits").style.opacity="0";
+            document.getElementById("container").style.opacity="1";
+            } 
+            function showRegulations(){ 
+            document.getElementById("regulations").style.opacity="1";
+            document.getElementById("container").style.opacity="0";  
+            } 
+            function hiddenRegulations(){ 
+            document.getElementById("regulations").style.opacity="0"; 
+            document.getElementById("container").style.opacity="1";
+            }
+            function showAchievements(){ 
+            document.getElementById("achievements").style.opacity="1";
+            document.getElementById("container").style.opacity="0"; 
+            }
+            function hiddenAchievements(){ 
+            document.getElementById("achievements").style.opacity="0";
+            document.getElementById("container").style.opacity="1";
+            }
+           </script> 
+           <div class="menubar">
+            <ul>
+                <li><a href="#">Main Page</a></li>
+                <li><a href="#">Introduction</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Famous Alumni</a></li>
+                <li><a href="#">Related Works</a></li>
+                <div class="admin"></div>
+            </ul>
+        </div>
+        <div class="background">
+            
+            <div class="subtitle">
+                Introduction to
+            </div>
+            <div class="box-1">
+            <button class="button" onmouseover= "showScale();this.style.cursor='pointer'", onmouseout="hiddenScale()" onclick="location='Scale.html'" >Scale</button>
+            <button class="button" onmouseover= "showSpirits();this.style.cursor='pointer'" onmouseout="hiddenSpirits()" onclick="location='Culture.html'">Culture</button>
+            </div>
+            <div class="box-2">
+                <button class="button" onmouseover= "showRegulations();this.style.cursor='pointer'" onmouseout="hiddenRegulations()" onclick="location='Regulations.html'">Regulations</button>
+                <button class="button" onmouseover= "showAchievements();this.style.cursor='pointer'" onmouseout="hiddenAchievements()"onclick="location='Achievements.html'">Achievements</button>
+            </div>
+            <div id="scale">Click to view more about the scale!</div>
+            <div id="spirits">Click to get more about the culture!</div>
+            <div id="regulations">Click to get more about the regulations!</div>
+            <div id="achievements">Click to get more about the achievements!</div>
+            <div id=container>
+                Welcome!
+                <div id=flip>
+                  <div><div>from both sides</div></div>
+                  <div><div>content</div></div>
+                  <div><div>Choose</div></div>
+                </div>
+                
+              </div>
+        </div>
+    </body>
+
+</html>
