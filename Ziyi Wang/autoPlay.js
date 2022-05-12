@@ -1,4 +1,4 @@
-class Lb {
+class autoPlay {
     constructor(options) {
         this.lbBox = document.getElementById(options.id);
         this.lbItems = this.lbBox.querySelectorAll('.lb-item');
@@ -70,30 +70,10 @@ class Lb {
         this.curIndex = toIndex;
     }
 
-    touchScreen(event) {
-        if (event.type == 'touchstart') {
-            this.startX = event.touches[0].pageX;
-            this.startY = event.touches[0].pageY;
-        } else {
-            this.endX = event.changedTouches[0].pageX;
-            this.endY = event.changedTouches[0].pageY;
-
-            const dx = this.endX - this.startX
-            const dy = this.startY - this.endY;
-            const angle = Math.abs(Math.atan2(dy, dx) * 180 / Math.PI);
-            if (Math.abs(dx) < 10 || Math.abs(dy) < 10) return;
-            if (angle >= 0 && angle <= 45) {
-                this.lbCtrlL.click();
-            } else if (angle >= 135 && angle <= 180) {
-                this.lbCtrlR.click();
-            }
-        }
-    }
-
     keyDown(event) {
-        if (event && event.keyCode == 37) {
+        if (event && event.keyCode == 1) {
             this.lbCtrlL.click();
-        } else if (event && event.keyCode == 39) {
+        } else if (event && event.keyCode == 2) {
             this.lbCtrlR.click();
         }
     }
@@ -111,11 +91,6 @@ class Lb {
         }
         if (this.screenKeyEvent) {
             document.addEventListener('keydown', this.keyDown.bind(this));
-        }
-
-        if (this.screenTouchEvent) {
-            this.lbBox.addEventListener('touchstart', this.touchScreen.bind(this));
-            this.lbBox.addEventListener('touchend', this.touchScreen.bind(this));
         }
     }
 

@@ -12,23 +12,24 @@
                     id: 'lb-1',              
                     speed: 600,              
                     delay: 3000,             
-                    direction: 'left',       
+                    direction: 'left',
                     screenKeyEvent: true,   
                     screenTouchEvent: true
                 }
-                const lb = new Lb(options);
-                lb.start();
+                const play = new autoPlay(options);
+                play.start();
             }
         </script>
     </head>
     <body>
-        <div class="header">
+        <div class="menubar">
             <ul>
-                <li><a href="Main_Page1.html">Main Page</a></li>
-                <li><a href="#">Introduction</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Famous Alumni</a></li>
-                <li><a href="#">Related Works</a></li>
+                <li><a href=" ">Main Page</a ></li>
+                <li><a href=" ">Main Page</a></li>
+                <li><a href="../Zhengyi Zou/School_Introduction.html">School Introduction</a></li>
+                <li><a href="../Chenrui Mao/1935.html">History</a></li>
+                <li><a href="../Xinyue Li/famous alumni.html">Famous Alumni</a></li>
+                <li><a href="../Ziyi Wang/Related_information.html">Related Works</a></li>
                 <div class="admin"></div>
             </ul>
         </div>
@@ -43,29 +44,26 @@
             
             <div class="schoolLogo">
             </div>
-        
-        
-            
+    
         </div>
-        <div id="content">
-            <div class="left">
-                <ul class="tab">
-                    <li><a href="#section-1">Video<p/a></li>
-                    <li><a href="#section-2">Intro</a></li>
-            </ul>
-            </div>
+        <div id="content" class="content">
+            
             <div class="right">
-                <h2 id="section-1"  class="subTitle">Video</h2>
+                <h2 id="section-2"  class="subTitle">Video</h2>
                 <div class="intro" id="section-2" name="movie">
                 
                     <div class="lb-box" id="lb-1">
 
                         <div class="lb-content">
                             <div class="lb-item active">
-                                <a href="https://www.bilibili.com/bangumi/play/ep328592">
-                                    <img src="img/Foeveryoung.png" alt="picture loss">
-                                    <span>Forever Young<br>The film tells the story of four young people (one of them is a student in NSAU) of different generations, full of expectations for their youth, but also in the midst of contradictions and struggles due to the changes of the times, who eventually find their true selves.</span>
-                                </a>
+                                <a href="https://www.iqiyi.com/v_gwxo3zlk10.html">
+                                    <img src="img/90.png" alt="picture loss">
+                                    <span>One Day When We Were Young<br>
+                                        One Day When We Were Young features 16 "post-90s" experts and scholars, including Yang Zhenning, Xu Yuanchong, Pan Jiluan, Yang Coix, Wang Xiji and Ma Zhitu, with an average age of over 96 years old, telling the audience their stories of teaching and studying to save the country and serve the nation.
+
+                                    </span>
+
+                                    </a>
                             </div>
                             <div class="lb-item">
                                 <a href="https://www.bilibili.com/bangumi/play/ep328592">
@@ -101,7 +99,7 @@
                         
                     </div>
                 </div>
-                <h2 id="section-2" class="subTitle">Intro</h2>
+                <h2 id="section-1" class="subTitle">Intro</h2>
                 <div class="intro" id="section-1" name="intro" style="height: 450px;">
                     <ul>
                         <li class="briefIntro">
@@ -128,20 +126,20 @@
                                 </div>  
                         </li>
                         <li class="briefIntro">
-                            <a href="https://baike.baidu.com/item/%E5%9B%BD%E7%AB%8B%E8%A5%BF%E5%8D%97%E8%81%94%E5%90%88%E5%A4%A7%E5%AD%A6">
-                                <img src="img/Baidu.png"/></a>
+                            <a href="../Chenrui Mao/1935.html">
+                                <img src="img/Timeline.png"/></a>
+                                <h2 class="Title3">Time line</h2>
                                 <div class="text1">  
                                     
-                                    <p>When the War broke out between China and Japan in 1937, Peking University, Tsinghua University and Nankai University merged to form Changsha Temporary University in Changsha and later National Southwestern Associated University</p>  
                                     <p>Click Picture to Read More</p>   
                                 </div> 
                         </li>
                         <li class="briefIntro">
-                            <a href="https://baike.baidu.com/item/%E5%9B%BD%E7%AB%8B%E8%A5%BF%E5%8D%97%E8%81%94%E5%90%88%E5%A4%A7%E5%AD%A6">
-                                <img src="img/Baidu.png"/></a>
+                            <a href="../Xinyue Li/famous alumni.html">
+                                <img src="img/photo1.png"/></a>
+                                <h2 class="Title3">Famous alumni</h2>
                                 <div class="text1">  
                                     
-                                    <p>When the War broke out between China and Japan in 1937, Peking University, Tsinghua University and Nankai University merged to form Changsha Temporary University in Changsha and later National Southwestern Associated University</p>  
                                     <p>Click Picture to Read More</p>   
                                 </div>   
                         </li>
@@ -150,6 +148,8 @@
                     <br>
                     
                 </div>
+                
+                
                 <hr>
 
             </div>
