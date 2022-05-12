@@ -24,15 +24,37 @@
                 width: 80%;
                 height: 200px;
                 text-align: center;
-                line-height: 200px;/*将文本高度设置为和容器一样的高度，使文本垂直居中*/
-                margin: 0 auto;/*设置div容器居中*/
+                line-height: 200px;
+                margin: 0 auto;
                 background-color: #E6E6FA;
             }
             .left{
-                width: 15%;
-                position: fixed;/*设置左侧导航栏相对于浏览器窗口固定*/
-                left: 8%;
-            }
+    width: 15%;
+    position: fixed;
+    left: 6%;
+    margin-right: 3vw;
+}
+.left ul li{
+    margin-right: 3vw;
+    width: 10vw;
+    height: 5vh;
+    line-height: 5vh;
+    padding: 5px;
+    text-align: center;
+    list-style: none;
+    border:1px solid #DCDCDC;
+    overflow: hidden;
+}
+.left a{
+    text-decoration: none;
+    color: #1E90FF;
+}
+.left li:hover{
+    background-color: #F5F5F5;
+}
+.left a:active{
+    color: #AFEEEE;
+}
             .right{
                 width: 65%;
                 float: right;
@@ -41,13 +63,13 @@
             ul li{
                 width: 150px;
                 height: 25px;
-                line-height: 25px;/*将文本高度设置为和容器一样的高度，使文本上下距离一样*/
+                line-height: 25px;
                 padding: 5px;
-                text-align: center;/*文字居中*/
-                list-style: none;/*去掉列表项前面的圆黑点*/
+                text-align: center;
+                list-style: none;
                 border:1px solid #DCDCDC;
             }
-            /* 下面是表格部分 */
+           
             .teachertable{
                 width: 80%;
                 color: white;
@@ -66,7 +88,7 @@
                 border:2px #f10d0d;
                 
             }
-            /* 下面是Buildings部分 */
+          
             #card {
             width: 80%;
             height: 300px;
@@ -97,8 +119,8 @@
  
  
         .content {
-            width: 440px;
-            height: 250px;
+            width: 50%;
+            height: 100vh;
             opacity: 0;
             float: left;
             margin: 0px;
@@ -134,7 +156,7 @@
             opacity: 1;
         }
             a{
-                text-decoration: none;/*去除a标签内容的下划线*/
+                text-decoration: none;
                 color: #1E90FF;
             }
             li:hover{
@@ -239,11 +261,12 @@
                 <br />
                 <br />
                 <hr>
-
+            
                 <h2 id="section-2">·Buildings</h2>
                 <input type="radio" value="t1" name="t1" id="test1" checked>
                 <input type="radio" value="t2" name="t1" id="test2">
                 <input type="radio" value="t3" name="t1" id="test3">
+            
                 <div id="card">
              
              
@@ -289,6 +312,8 @@
                 <br />
                 <br />
                 <hr>
+            
+            <div class="teacher">
                 <h2 id="section-3">·Teachers</h2>
                 <p>According to the "History of Southwest United University" edited by the Beijing Alumni Association in 1996, there were 3,750 students and faculty members, 370 teachers, 400 staff (including doctors and technicians), and 400 police officers, including 200 full-time administrators. There were more than 300 professors and associate professors who taught at the National Southwest United University.
                     In 1939, for example, there were 269 teachers in the university, including 89 from Peking University, 150 from Tsinghua University, and 30 from Nankai. Here are some famous professors.</p>
@@ -313,6 +338,7 @@
                     <br />
                     <br />   
                 <hr>
+            </div>
                 <h2 id="section-4">·Students</h2>
                 <p>From 1938 to 1946, the school graduated a total of 3,343 students. According to the "History of National Southwest United University" edited by the Beijing Alumni Association in 1996, from 1937 to 1946, a total of 8,000 students passed the entrance examination of the university, and eventually nearly 2,500 undergraduates and about 200 specialists graduated from the university; 1,280 undergraduates and 74 postgraduates graduated from Peking University, Tsinghua University and Nankai University. In total, about 4,000 students graduated, which was the largest number of graduates in China at that time.</p>
                 <p>During the eight years of the war, more than 1,100 students from the National Southwest United University joined the military, of which 834 are engraved on the back of the monument of the National Southwest United University, including many young people who took the initiative to join the military, including <a href="https://baike.baidu.com/item/%E6%A2%85%E7%A5%96%E5%BD%A6">Mei Zuyan</a> , son of Tsinghua University President Mei Yiqi, a member of the committee of the United University. In addition to serving as interpreters, NSAU students joined the Chinese Expeditionary Force and the Air Force. Between 1942 and 1945, 1,500 Chinese and American soldiers shed their blood to ensure the smooth passage of the "Hump" air route. Among them were NSAU students, according to records.</p>

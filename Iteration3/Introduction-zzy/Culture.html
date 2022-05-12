@@ -25,29 +25,51 @@
                 width: 80%;
                 height: 200px;
                 text-align: center;
-                line-height: 200px;/*将文本高度设置为和容器一样的高度，使文本垂直居中*/
-                margin: 0 auto;/*设置div容器居中*/
+                line-height: 200px;
+                margin: 0 auto;
                 background-color: #E6E6FA;
             }
             .left{
-                width: 15%;
-                position: fixed;/*设置左侧导航栏相对于浏览器窗口固定*/
-                left: 8%;
-            }
+    width: 15%;
+    position: fixed;
+    left: 6%;
+    margin-right: 3vw;
+}
+.left ul li{
+    margin-right: 3vw;
+    width: 10vw;
+    height: 5vh;
+    line-height: 5vh;
+    padding: 5px;
+    text-align: center;
+    list-style: none;
+    border:1px solid #DCDCDC;
+    overflow: hidden;
+}
+.left a{
+    text-decoration: none;
+    color: #1E90FF;
+}
+.left li:hover{
+    background-color: #F5F5F5;
+}
+.left a:active{
+    color: #AFEEEE;
+}
             .right{
                 width: 65%;
                 float: right;
                 margin-right: 10%;
             }
             ul li{
-                /*ul是块级元素，可以设置宽度和高度*/
-                width: 150px;/*设置li的宽度*/
+                
+                width: 150px;
                 height: 25px;
-                line-height: 25px;/*将文本高度设置为和容器一样的高度，使文本上下距离一样*/
+                line-height: 25px;
                 padding: 5px;
-                text-align: center;/*文字居中*/
-                list-style: none;/*去掉列表项前面的圆黑点*/
-                border:1px solid #DCDCDC;/*设置边框宽度为1px,实线,颜色为darkgray*/
+                text-align: center;
+                list-style: none;
+                border:1px solid #DCDCDC;
             }
 
             #box {
@@ -157,8 +179,7 @@
             opacity: 1;
         }
             a{
-                text-decoration: none;/*去除a标签内容的下划线*/
-                color: #1E90FF;
+                text-decoration: none;
             }
             li:hover{
                 background-color: #F5F5F5;
@@ -194,7 +215,7 @@
     height:250px;
     float:left;
 }
-@keyframes text {          /*0%-20%是播放下一个图片，0%-10%是图片暂停的时间*/
+@keyframes text {          
     0%,10%{
         margin-left:0px;
     }
