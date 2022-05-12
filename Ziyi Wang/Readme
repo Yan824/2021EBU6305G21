@@ -1,1 +1,7 @@
 This is the folder for realated works page
+
+version-3:
+Related_information.html -the html code for main page
+Related_information.css -the css code for main page and structure
+autoPlay.css -the css code for pictures(section-1 vedio)
+autoPlay.js -the js code for picture play
