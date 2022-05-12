@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0/>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>School Introduction</title>
+    <style>
+        body{
+            margin: 0 0 0 0;
+        }
+        .background{
+            height: 600px;
+            background-image: url("images/bk2.png");
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+        }
+        .menubar ul{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    height: 6vh;
+    line-height: 6vh;
+    background-color: rgba(149, 141, 133, 0.763);
+    white-space:nowrap;
+}
+.menubar ul li{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 3; 
+    list-style: none;
+    width: 20%;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+.menubar ul li:hover a,
+.menubar ul li a{
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    display: block; 
+}
+.menubar li:hover ul li a:hover,
+.menubar ul li a:hover{
+    height: 100%;
+    background:rgba(182, 225, 220, 0.685);
+}
+.admin{
+    z-index: 1;
+    height: 6vh;
+    position: absolute;
+    left: 20%;
+    top: 0;
+    width: 20%;
+    background-color: rgba(203, 203, 241, 0.51);
+}
+.background1{
+    top: 6vh;
+    height: 15vh;
+    background-image: url("images/school\ name1.png");
+    background-repeat: no-repeat;
+    
+    background-size: 100% 100%;
+}
+.background2{
+    height: 85vh;
+    padding: 0;
+    margin: 0;
+    background-image: url("images/Building.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.background3{
+
+    height: 15vh;
+    background-image: url("images/school\ name.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.schoolLogo{
+    z-index: 3;
+    display: block;
+    position: absolute;
+    left: 8.5%;
+    top: 17vh;
+    background-color: rgba(240, 248, 255, 0.626);
+    background: url("images/SchoolLogo.png"); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10%;
+    height: 20vh;
+    
+}
+.schoolName{
+    white-space:nowrap;
+    z-index: 3;
+    padding: 0;
+    margin: 0;
+    top: 20vh;
+    left: 18%;
+    height: 6vh;
+    width: 23%;
+    line-height: 6vh;
+    position: absolute;
+    font-family: "Microsoft Yahei";
+    font-size: 0.8vw;
+    color: rgb(43, 47, 76);
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(240, 248, 255, 0.626);  
+}
+.bottom1{
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    top:20vh;
+    left: 18%;
+    height: 16vh;
+    width: 30%;
+    background-color: rgba(153, 194, 230, 0.615);
+    position: absolute;
+
+}
+.title1{
+    white-space:nowrap;
+    z-index: 3;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 26vh;
+    left: 20%;
+    height: 10vh;
+    width:28%;
+    text-align: center;
+    display: block;
+    background-color: rgba(240, 248, 255, 0.626);
+    font-family: "Microsoft Yahei";
+    font-weight: bold;
+    line-height: 10vh;
+    font-size: 3vw;
+}
+        .wrap_div1 {
+        position: relative;
+        left: 10%;
+        top:30%;
+        width: 15%;
+        height: 55vh;
+        overflow: hidden;
+        border: 0px;
+        margin: 0 0 0 0;
+        margin-right: 0;
+        float: left;
+        }
+        .wrap_div2 {
+        position: relative;
+        left: 16%;
+        top:30%;
+        width: 15%;
+        height: 55vh;
+        overflow: hidden;
+        border: 0px;
+        margin: 0 0 0 0;
+        margin-right: 0;
+        float: left;
+        }
+        .wrap_div3 {
+        position: relative;
+        left: 22%;
+        top:30%;
+        width: 15%;
+        height: 55vh;
+        overflow: hidden;
+        border: 0px;
+        margin: 0 0 0 0;
+        margin-right: 0;
+        float: left;
+        }
+        .wrap_div4 {
+        position: relative;
+        left: 28%;
+        top:30%;
+        width: 15%;
+        height: 55vh;
+        overflow: hidden;
+        border: 0px;
+        margin: 0 0 0 0;
+        margin-right: 0;
+        float: left;
+        }
+        .boxCSS {
+            background-image: url("images/scale_school.jpeg");
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            border-radius: 10px;
+            display: block;
+            cursor: pointer;
+        }
+        .boxCSS2 {
+            background-image: url("images/spirits.jpeg");
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            border-radius: 10px;
+            display: block;
+            cursor: pointer;
+        }
+        .boxCSS3 {
+            background-image: url("images/cer.jpeg");
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            border-radius: 10px;
+            display: block;
+            cursor: pointer;
+        }
+        .boxCSS4 {
+            background-image: url("images/achievements.jpeg");
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            border-radius: 10px;
+            display: block;
+            cursor: pointer;
+        }
+        .mask1 {
+        position: absolute;
+        /* top: 0; */
+        right: 0;
+        left: 0;
+        bottom: -75%;
+        width: 100%;
+        height: 100%;
+        /* opacity: 0; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background: rgba(46, 81, 111, 0.8);
+        padding: 5px 0;
+        box-sizing: border-box;
+        transition: all 1s;
+        }
+        .mask2 {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -75%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background: rgba(46, 81, 111, 0.8);
+        padding: 5px 0;
+        box-sizing: border-box;
+        transition: all 1s;
+        }
+        .mask3 {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -75%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background: rgba(46, 81, 111, 0.8);
+        padding: 5px 0;
+        box-sizing: border-box;
+        transition: all 1s;
+        }
+        .mask4 {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -75%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background: rgba(46, 81, 111, 0.8);
+        padding: 5px 0;
+        box-sizing: border-box;
+        transition: all 1s;
+        }
+        .wrap_div1:hover .mask1 {
+        background: rgba(86, 32, 112, 0.8);
+        padding: 30px 0;
+        bottom: 0;
+        }
+        .wrap_div2:hover .mask2 {
+        background: rgba(86, 32, 112, 0.8);
+        padding: 30px 0;
+        bottom: 0;
+        } .wrap_div3:hover .mask3 {
+        background: rgba(86, 32, 112, 0.8);
+        padding: 30px 0;
+        bottom: 0;
+        }
+        .wrap_div4:hover .mask4 {
+        background: rgba(86, 32, 112, 0.8);
+        padding: 30px 0;
+        bottom: 0;
+        }
+        #container {
+            height: 600px;
+            width: 400px;
+            position: absolute;
+            top: 93%;
+            left: 34%;
+            border-color: rgb(246, 213, 207);
+            text-align: center;
+            font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;;
+            font-weight: bold;
+            color: rgb(239, 85, 85);
+            font-size: 50px;
+            opacity: 1;
+}
+
+#flip {
+  height: 70px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color:rgb(199, 56, 56);
+  padding:4px 12px;
+  height: 45px;
+  margin-bottom:40px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+.button{
+            height: 50px;
+            text-align: center;
+            margin: 20px;
+            line-height: 30px;
+            background: #2e82ff7a;
+            color: #ffffff;
+            font-size: 12px;
+            border-radius: 5px;
+            animation: zoomIn 1.5s infinite;
+
+        }
+        @keyframes zoomIn {
+            60% {
+            transform: scale(1.2);
+            }
+            100% {
+            transform: scale(1);
+            }
+        }
+    </style>
+
+    </head>
+    <body>
+        <div class="menubar">
+            <ul>
+                <li><a href="../index-zqy.html">Main Page</a></li>
+                <li><a href="../Introduction-zzy/School_Introduction.html">Introduction</a></li>
+                <li><a href="../History-mcr/1935.html">History</a></li>
+                <li><a href="../Famous Alumni-lxy/famous alumni.html">Famous Alumni</a></li>
+                <li><a href="../Related Works-wzy/Related_information.html">Related Works</a></li>
+                <div class="admin"></div>
+            </ul>
+        </div>
+        <div class="background1">
+        
+        </div>
+        
+        <div class="bottom1"></div>
+    <div class="schoolName">
+            National South-West Associated University
+    </div>
+    <div class="title1">
+        -Introduction-
+    </div>
+    <div class="schoolLogo">
+       
+    </div>
+        <div class="background2">
+            <div class="wrap_div1">
+                <div class="boxCSS">
+                </div>
+                <div class="mask1">
+                  <h3 style="color: white;">Scale</h3>
+                  <p style="color:white ; text-align: center;">Find NSAU's teaching facilities, campus size, number of students and faculty, etc.</p>
+                  <button class="button" onmouseover= "this.style.cursor='pointer'" onclick="location='Scale.html'">View More</button><br>
+                </div>
+            </div>
+            <div class="wrap_div2">
+                <div class="boxCSS2">
+                </div>
+                <div class="mask2">
+                 <h3 style="color: white;">Culture</h3>
+                 <p style="color:white ; text-align: center;">Find NSAU's school motto, school song, school logo, etc.</p><br>
+                 <button class="button" onmouseover= "this.style.cursor='pointer'" onclick="location='Culture.html'">View More</button>
+                </div>
+            </div>
+            <div class="wrap_div3">
+                <div class="boxCSS3">
+                </div>
+                <div class="mask3">
+                 <h3 style="color: white;">Regulations</h3>
+                 <p style="color:white ; text-align: center;">Find NSAU's personnel arrangements, school rules and regulations, etc.</p><br>
+                 <button class="button" onmouseover= "this.style.cursor='pointer'" onclick="location='Regulations.html'">View More</button>
+                </div>
+            </div>
+            <div class="wrap_div4">
+                <div class="boxCSS4">
+                </div>
+                <div class="mask4">
+                 <h3 style="color: white;">Achievements</h3>
+                 <p style="color:white ; text-align: center;">Find NSAU's research achievements, study abroad arrangements, etc.</p>
+                 <button class="button" onmouseover= "this.style.cursor='pointer'" onclick="location='Achievements.html'">View More</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="background3"></div>
+              
+        
+    </body>
