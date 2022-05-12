@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-top: 0;
+        }
+        ul,li{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menubar{
+            margin: 0;
+            padding: 0;
+            /* background-color: rgb(172, 128, 69); */
+        }
+        .menubar ul{
+            padding: 0;
+            margin: 0;
+            position: relative;
+            display: flex;
+            height: 45px;
+            line-height: 45px;
+            background-color: rgba(149, 141, 133, 0.763);
+        }
+        .menubar ul li{
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            z-index: 3; 
+            list-style: none;
+            width: 20%;
+            text-align: center;
+            border-radius: 10px;
+            color: rgb(255, 255, 255);
+        }
+        .menubar ul li:hover a,
+        .menubar ul li a{
+            z-index: 3;
+            width: 100%;
+            height: 100%;
+            display: block;
+            color: aliceblue;
+            text-decoration: none;
+            display: block; 
+        }
+        .menubar li:hover ul li a:hover,
+        .menubar ul li a:hover{
+            height: 100%;
+            
+            background:rgba(182, 225, 220, 0.685);
+            /* color: #000; */
+        }
+        .admin{
+            z-index: 1;
+            height: 45px;
+            position: absolute;
+            left: 20%;
+            top: 0;
+            width: 20%;
+            background-color: rgba(203, 203, 241, 0.51);
+        }
+    </style>
+</head>
+<body>
+    <div class="menubar">
+        <ul>
+            <li><a href="#">Main Page</a></li>
+            <li><a href="#">Introduction</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Famous Alumni</a></li>
+            <li><a href="#">Related Works</a></li>
+            <div class="admin"></div>
+        </ul>
+    </div>
+</body>
+</html>

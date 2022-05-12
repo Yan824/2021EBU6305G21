@@ -1,0 +1,529 @@
+body{
+    margin-top: 0;
+}
+ul,li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menubar{
+    margin: 0;
+    padding: 0;
+}
+.menubar ul{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    height: 6vh;
+    line-height: 6vh;
+    background-color: rgba(149, 141, 133, 0.763);
+    white-space:nowrap;
+}
+.menubar ul li{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 3; 
+    list-style: none;
+    width: 20%;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+.menubar ul li:hover a,
+.menubar ul li a{
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    display: block; 
+}
+.menubar li:hover ul li a:hover,
+.menubar ul li a:hover{
+    height: 100%;
+    background:rgba(182, 225, 220, 0.685);
+}
+.admin{
+    z-index: 1;
+    height: 6vh;
+    position: absolute;
+    left: 60%;
+    top: 0;
+    width: 20%;
+    background-color: rgba(203, 203, 241, 0.51);
+}
+.background1{
+    top: 6vh;
+    height: 15vh;
+    background-image: url("img-lxy/school\ name1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.background2{
+    height: 85vh;
+    padding: 0;
+    margin: 0;
+    background-image: url("img-lxy/Building.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.background3{
+    height: 15vh;
+    background-image: url("img-lxy/school\ name.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.box-1{
+    float: left;
+    width: 55vw;
+    height: 69vh;
+    margin: 8vh auto; 
+    overflow: hidden;   
+    position: relative;
+} 
+
+.imageList{
+    display: flex;
+    position: relative;
+    width: 55vw;
+    height: 62vh;
+    transition: 0.5s ease;
+}
+.imageList img{
+    display:block;  
+    width: 55vw; 
+    height: 62vh;
+    transition: 0.5s ease;
+}
+
+.box-1 p{
+    margin: 0;
+    left: 0;
+    bottom: 0;
+    height: 7vh;
+    width:100%;
+    background: rgba(248, 251, 254, 0.764);
+    text-indent: 2em;
+    padding-right:0 ;
+    font-size: 2vh;
+    /* line-height: 7vh; */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /* white-space: nowrap; */
+    font-weight: normal;
+    color: rgb(18, 18, 18)
+} 
+.box-2{
+    float: left;
+    margin-top: 8vh;
+    margin-left: 3%;
+    margin-right: 4%;
+    width: 14%;
+    height: 69vh;
+    background-color: rgba(117, 114, 114, 0.61);
+    font-size: 1.1vw;
+}
+
+.box-1 a {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: block;
+    width: 40px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    user-select: none;
+    font-size: 30px;
+    text-align: center;
+    line-height: 70px;
+    text-decoration: none;
+}
+.schoolLogo{
+    z-index: 3;
+    display: block;
+    position: absolute;
+    left: 3%;
+    top: 9vh;
+    background-color: rgba(240, 248, 255, 0.626);
+    background: url("img-lxy/SchoolLog.png"); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10%;
+    height: 20vh;
+    
+}
+.schoolName{
+    white-space:nowrap;
+    z-index: 3;
+    padding: 0;
+    margin: 0;
+    top: 10vh;
+    left: 13%;
+    height: 6vh;
+    width: 23%;
+    line-height: 6vh;
+    position: absolute;
+    font-family: "Microsoft Yahei";
+    font-size: 0.8vw;
+    color: rgb(43, 47, 76);
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(240, 248, 255, 0.626);  
+}
+.bottom1{
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    top: 10vh;
+    left: 13%;
+    height: 16vh;
+    width: 30%;
+    background-color: rgba(153, 194, 230, 0.615);
+    position: absolute;
+
+}
+.title1{
+    white-space:nowrap;
+    z-index: 3;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 16vh;
+    left: 15%;
+    height: 10vh;
+    width:28%;
+    text-align: center;
+    display: block;
+    background-color: rgba(240, 248, 255, 0.626);
+    font-family: "Microsoft Yahei";
+    font-weight: bold;
+    line-height: 10vh;
+    font-size: 3vw;
+}
+.circle1{
+    height: 3vh;
+    width: 3vh;
+    background: url(img-lxy/circle.png);
+    background-size: contain;
+    position: absolute;
+    border: none;
+}
+.circle1:active{
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.circle1:focus{
+    outline:none;
+}
+.close1{
+    height: 3vh;
+    width: 3vh;
+    background: url(img-lxy/close.png);
+    left: 87%;
+    position: absolute;
+    background-size: contain;
+    border: none;
+}
+.close1:active{
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.close1:focus{
+    outline:none;
+}
+
+#JiangMengL{
+    /* float: left; */
+    left: 79%;
+    width: 18%;
+    margin-top: 8vh;
+    height: 69vh;
+    background-color: rgba(117, 114, 114, 0.61);
+    opacity: 1;
+    position: absolute;
+    transition: 0.5s;
+    /* z-index: 5; */
+} 
+#ZhuziQ{
+    /* float: right; */
+    left: 79%;
+    width: 18%;
+    margin-top: 8vh;
+    height: 69vh;
+    background-color: rgba(117, 114, 114, 0.61);
+    opacity: 1;
+    position: absolute;
+    display: none;
+    transition: 0.5s;
+    /* z-index: 4; */
+} 
+#FengYouL{
+    /* float: right; */
+    left: 79%;
+    width: 18%;
+    margin-top: 8vh;
+    height: 69vh;
+    background-color: rgba(117, 114, 114, 0.61);
+    opacity: 1;
+    position: absolute;
+    display: none;
+    transition: 0.5s;
+    /* z-index: 4; */
+} 
+#TangLan{
+    /* float: right; */
+    left: 79%;
+    width: 18%;
+    margin-top: 8vh;
+    height: 69vh;
+    background-color: rgba(117, 114, 114, 0.61);
+    opacity: 1;
+    position: absolute;
+    display: none;
+    transition: 0.5s;
+    /* z-index: 4; */
+} 
+#ShenCongW{
+    /* float: right; */
+    left: 79%;
+    width: 18%;
+    margin-top: 8vh;
+    height: 69vh;
+    background-color: rgba(117, 114, 114, 0.61);
+    opacity: 1;
+    position: absolute;
+    display: none;
+    transition: 0.5s;
+    /* z-index: 4; */
+} 
+
+#MeiYiQ{
+    /* float: right; */
+    left: 79%;
+    width: 18%;
+    margin-top: 8vh;
+    height: 69vh;
+    background-color: rgba(117, 114, 114, 0.61);
+    opacity: 1;
+    position: absolute;
+    display: none;
+    transition: 0.5s;
+    /* z-index: 4; */
+} 
+
+#WenYiD{
+    /* float: right; */
+    left: 79%;
+    width: 18%;
+    margin-top: 8vh;
+    height: 69vh;
+    background-color: rgba(117, 114, 114, 0.61);
+    opacity: 1;
+    position: absolute;
+    display: none;
+    transition: 0.5s;
+    /* z-index: 4; */
+} 
+#ZhouPeiY{
+    left: 79%;
+    width: 18%;
+    margin-top: 8vh;
+    height: 69vh;
+    background-color: rgba(117, 114, 114, 0.61);
+    opacity: 1;
+    position: absolute;
+    display: none;
+    transition: 0.5s;
+}
+#LiangSiC{
+    left: 79%;
+    width: 18%;
+    margin-top: 8vh;
+    height: 69vh;
+    background-color: rgba(117, 114, 114, 0.61);
+    opacity: 1;
+    position: absolute;
+    display: none;
+    transition: 0.5s;
+}
+#LinHuiY{
+    left: 79%;
+    width: 18%;
+    margin-top: 8vh;
+    height: 69vh;
+    background-color: rgba(117, 114, 114, 0.61);
+    opacity: 1;
+    position: absolute;
+    display: none;
+    transition: 0.5s;
+}
+#WuYouX{
+    left: 79%;
+    width: 18%;
+    margin-top: 8vh;
+    height: 69vh;
+    background-color: rgba(117, 114, 114, 0.61);
+    opacity: 1;
+    position: absolute;
+    display: none;
+    transition: 0.5s;
+}
+.description{
+    margin-top:2vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    background-color: rgba(248, 251, 254, 0.764);
+    height: 35vh;font-size: 1.2vw;
+    text-align: left;
+}
+.famousP{
+    width: 11vw;
+    height: 25vh; 
+    margin: 2vh 3.5vw;
+}
+@media only screen and (max-width:800px){
+    .h2{
+        font-size: 3vh;
+    }
+    .background2{
+        height: 120vh;
+    }
+    .schoolLogo{
+        width: 20vh;
+        height: 20vh;
+    }
+    .bottom1{
+        left: 25vh;
+        width: 47vw;
+    }
+    .schoolName{
+        left: 25vh;
+        width: 45vw;
+    }
+    .title1{
+        left: 27vh;
+        width: 45vw;
+        font-size: 4.5vw;
+    }
+    .box-1{
+        width: 85vw;
+        margin-left: 5vw;
+        margin-top: 2vh;
+    }
+    .box-2{
+        /* margin-top: 7vh; */
+        /* margin-left: 3vw; */
+        width: 85vw;
+        height: 19vh;
+        margin-left: 5vw;
+    }
+    #JiangMengL{
+        left: 3vw;
+        top:114vh;
+        margin-left: 3vw;
+        width: 85vw;
+        height: 25vh;
+
+    }
+    .imageList{
+        
+        width: 100%;
+       
+    }
+    .imageList img{
+       
+        width: 100%; 
+    }
+    .famousP{
+        width: 14vw;
+        height: 20vh;
+    }
+    .description{
+        float: right;
+        margin-top:2vh;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        width: 60vw;
+        background-color: rgba(248, 251, 254, 0.764);
+        height: 20vh;font-size: 2.5vh;
+    }
+   
+    #ZhuziQ{
+        top:114vh;
+        left: 3vw;
+        margin-left: 3vw;
+        width: 85vw;
+        height: 25vh;
+    } 
+    #FengYouL{
+        top:114vh;
+        left: 3vw;
+        margin-left: 3vw;
+        width: 85vw;
+        height: 25vh;
+    } 
+    #TangLan{
+        top:114vh;
+        left: 3vw;
+        margin-left: 3vw;
+        width: 85vw;
+        height: 25vh;
+    } 
+    #ShenCongW{
+        top:114vh;
+        left: 3vw;
+        margin-left: 3vw;
+        width: 85vw;
+        height: 25vh;
+    } 
+    
+    #MeiYiQ{
+        top:114vh;
+        left: 3vw;
+        margin-left: 3vw;
+        width: 85vw;
+        height: 25vh;
+    } 
+    
+    #WenYiD{
+        top:114vh;
+        left: 3vw;
+        margin-left: 3vw;
+        width: 85vw;
+        height: 25vh;
+    } 
+    #ZhouPeiY{
+        top:114vh;
+        left: 3vw;
+        margin-left: 3vw;
+        width: 85vw;
+        height: 25vh;
+    }
+    #LiangSiC{
+        top:114vh;
+        left: 3vw;
+        margin-left: 3vw;
+        width: 85vw;
+        height: 25vh;
+    }
+    #LinHuiY{
+        top:114vh;
+        left: 3vw;
+        margin-left: 3vw;
+        width: 85vw;
+        height: 25vh;
+    }
+    #WuYouX{
+        top:114vh;
+        left: 3vw;
+        margin-left: 3vw;
+        width: 85vw;
+        height: 25vh;
+    }
+    .close1{
+        left: 95%;
+    }
+}
