@@ -1,0 +1,424 @@
+body{
+    margin: 0;
+}
+.menubar{
+    margin: 0;
+    padding: 0;
+}
+.menubar ul{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    height: 6vh;
+    line-height: 6vh;
+    background-color: rgba(149, 141, 133, 0.763);
+    white-space:nowrap;
+}
+.menubar ul li{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 3; 
+    list-style: none;
+    width: 20%;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+.menubar ul li:hover a,
+.menubar ul li a{
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    display: block; 
+}
+.menubar li:hover ul li a:hover,
+.menubar ul li a:hover{
+    height: 100%;
+    background:rgba(182, 225, 220, 0.685);
+}
+.admin{
+    z-index: 1;
+    height: 6vh;
+    position: absolute;
+    left: 40%;
+    top: 0;
+    width: 20%;
+    background-color: rgba(203, 203, 241, 0.51);
+}
+
+.menu{
+    width: 100%;
+	height: 70px;
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.menu ul{
+    width: 100%;
+    height: 80%;
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding:4px 8px;
+}
+.menu ul li{
+    display: inline;
+    float: left;
+    clear: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    height: 100%;
+}
+.menu ul li:hover a,
+.menu ul li a{
+    width: 100%;
+    height: 100%;
+	display: block;
+	background:rgb(239, 241, 233);
+    display: inline;
+    padding: 0 6px 0 0;
+    float: left;
+    text-transform: lowercase;
+    color:white;
+    text-decoration: none;
+}
+.menu ul li a:hover,
+.menu ul li a:hover{
+    height: 100%;
+    background:rgb(192, 179, 3);
+    color: #000;
+}
+
+.navigation{
+	width: 100%;
+	height: 50px;
+}
+.navigation ul{
+    width: 100%;
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding:4px 8px;
+}
+.navigation ul li{
+    text-align: center;
+    display: inline;
+    float: left;
+    clear: none;
+    margin: 0;
+    padding: 0;
+    width: 14.285714%;
+    height: 50px;
+}
+.navigation ul li:hover a,
+.navigation ul li a{
+    width: 100%;
+	display: block;
+	background:rgb(142, 142, 241);
+    display: inline;
+    padding: 0 6px 0 0;
+    float: left;
+    text-transform: lowercase;
+    color:white;
+    font-size: 2.5vh;
+    text-decoration: none;
+}
+.navigation ul li a:hover{
+    background:rgb(154, 230, 154);
+    color: #000;
+}
+
+.figurenav{
+    margin-top: 11vh;
+    width: 100%;
+	height: 150px;
+}
+.figurenav ul{
+    width: 100%;
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0 0;
+}
+.figurenav ul li{
+    float: left;
+    clear: none;
+    margin-right: 1%;
+    padding: 0;
+    width: 24%;
+    height: 100%;
+}
+.view img{
+    width: 100%;
+    height: 150px;
+    transition: all 0.2s linear;
+}
+.view:hover img{
+    transform: scale(1.1);
+}
+.view{
+    position: relative;
+    width: 25%;
+	height: 150px;
+    overflow: hidden;
+    cursor: default;
+    z-index: 0;
+}
+.view .mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+	height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    color:blue;
+    font-size: 1.5vw;
+    transition: all 0.5s ease-in-out;
+    /* background-color: rgb(146, 240, 240); */
+    filter: blur();
+    z-index: 0;
+    text-align: center;
+    font-weight: bold;
+}
+.view:hover .mask{
+    opacity: 1;
+    text-decoration: none;
+}
+
+input{
+    width: 100%;
+    scroll-behavior: smooth;
+    scrollbar-color: blue;
+    align-items: center;
+}
+
+.main{
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Beijing{
+    width: 3%;
+    height: 3%;
+    border: none;
+    position: relative;
+    left: 64%;
+    top: 35%;
+    background: url(img/Button.png); 
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#Beijinginfo{
+    margin: 0;
+    width: 20%;
+    height: 20%;
+    border: none;
+    position: relative;
+    left: 64%;
+    top: 35%;
+    padding: 0;
+    opacity: 0;
+    background-color: rgb(110, 249, 249);
+    font-size:0.5vh;
+}
+
+#YunNan{
+    width: 3%;
+    height: 3%;
+    border: none;
+    position: relative;
+    padding: 0;
+    left: 41%;
+    top: 74%;
+    background: url(img/Button.png); 
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#YunNaninfo{
+    margin: 0;
+    width: 20%;
+    height: 20%;
+    border: none;
+    position: relative;
+    left: 44%;
+    top: 54%;
+    opacity: 0;
+    overflow: hidden;
+    background-color: rgb(110, 249, 249);
+    font-size:0.5vh;
+}
+#HuBei{
+    width: 3%;
+    height: 3%;
+    border: none;
+    position: relative;
+    padding: 0;
+    left: 56%;
+    top: 65%;
+    background: url(img/Button.png); 
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#Hubeiinfo{
+    margin: 0;
+    width: 20%;
+    height: 20%;
+    border: none;
+    position: relative;
+    left: 59%;
+    top: 46%;
+    opacity: 0;
+    background-color: rgb(110, 249, 249);
+    font-size:0.5vh;
+}
+#Shanghai{
+    width: 3%;
+    height: 3%;
+    border: none;
+    position: relative;
+    padding: 0;
+    left: 70%;
+    top: 60%;
+    background: url(img/Button.png); 
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#Shanghaiinfo{
+    margin: 0;
+    width: 20%;
+    height: 20%;
+    border: none;
+    position: relative;
+    left: 70%;
+    top: 60%;
+    opacity: 0;
+    background-color: rgb(110, 249, 249);
+    font-size:0.5vh;
+}
+#Battle{
+    width: 3%;
+    height: 3%;
+    border: none;
+    position: relative;
+    padding: 0;
+    left: 60%;
+    top: 60%;
+    background: url(img/Button.png); 
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#Battleinfo{
+    margin: 0;
+    width: 20%;
+    height: 20%;
+    border: none;
+    position: relative;
+    left: 60%;
+    top: 60%;
+    opacity: 0;
+    background-color: rgb(110, 249, 249);
+    font-size:0.5vh;
+}
+.jump{
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    color: blue;
+}
+.close{
+    height: 10%;
+    position: absolute;
+    top: 0;
+    width: 10%;
+    left: 90%;
+    text-align: center;
+    background-image: url(img/exit.jfif);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+button:active{
+    
+    transform: translateY(4px);
+}       
+button:focus{
+ outline:none;
+}
+.top{
+    width: 100%;
+    height: 10vh;
+    text-align: left;
+    line-height: 200px;
+    margin: 0 auto;
+}
+.schoolLogo{
+    z-index: 3;
+    display: block;
+    position: absolute;
+    left: 3%;
+    top: 9vh;
+    background-color: rgba(240, 248, 255, 0.626);
+    background: url("img/SchoolLog.png"); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10%;
+    height: 20vh;
+    
+}
+.schoolName{
+    white-space:nowrap;
+    z-index: 3;
+    padding: 0;
+    margin: 0;
+    top: 10vh;
+    left: 13%;
+    height: 6vh;
+    width: 23%;
+    line-height: 6vh;
+    position: absolute;
+    font-family: "Microsoft Yahei";
+    font-size: 0.8vw;
+    color: rgb(43, 47, 76);
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(240, 248, 255, 0.626);  
+}
+.bottom1{
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    top: 10vh;
+    left: 13%;
+    height: 16vh;
+    width: 40%;
+    background-color: rgba(153, 194, 230, 0.615);
+    position: absolute;
+
+}
+.title1{
+    white-space:nowrap;
+    z-index: 3;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 16vh;
+    left: 15%;
+    height: 10vh;
+    width:38%;
+    text-align: center;
+    display: block;
+    background-color: rgba(240, 248, 255, 0.626);
+    font-family: "Microsoft Yahei";
+    font-weight: bold;
+    line-height: 10vh;
+    font-size: 3vw;
+}

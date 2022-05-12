@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<title>History Page</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link type = "text/css" href = "HistoryPage.css" rel="stylesheet" />
+</head>
+
+	
+<body style="background-image: url(img/bgr.png); background-repeat: no-repeat; background-size: 100% 100%;">
+    <script>
+		function displayWindowB() {
+			document.getElementById("Battleinfo").style.opacity = "1";
+		}
+		function hideWindowB() {
+			document.getElementById("Battleinfo").style.opacity = "0";
+		}
+        function displayWindowY() {
+			document.getElementById("YunNaninfo").style.opacity = "1";
+		}
+		function hideWindowY() {
+			document.getElementById("YunNaninfo").style.opacity = "0";
+		}
+	</script>
+
+    <div class="menubar">
+        <ul>
+            <li><a href="../index-zqy.html">Main Page</a></li>
+            <li><a href="../Introduction-zzy/School_Introduction.html">Introduction</a></li>
+            <li><a href="../History-mcr/1935.html">History</a></li>
+            <li><a href="../Famous Alumni-lxy/famous alumni.html">Famous Alumni</a></li>
+            <li><a href="../Related Works-wzy/Related_information.html">Related Works</a></li>
+            <div class="admin"></div>
+        </ul>
+    </div>
+    <br>
+    <div class="top">
+        <div class="bottom1"></div>
+            <div class="schoolName">
+                    National South-West Associated University
+            </div>
+            <div class="title1">
+                -History Time Map-
+            </div>
+            
+            <div class="schoolLogo">
+            </div> 
+        </div>
+    </div>
+    <br>
+    <div class="figurenav">
+        <ul>
+            <li class="view">
+                <img src="img/Gate.jfif" alt="Intro"/>
+                <a class="mask" href="Pic1.html">Foundation of the university</a>
+            </li>
+            <li class="view">
+                <img src="img/Japan.jfif" alt="Intro" sizes="100% 100%"/>
+                <a class="mask" href="Pic2.html">Japan's invasion</a>
+            </li>
+            <li class="view">
+                <img src="img/People.jfif" alt="Intro"/>
+                <a class="mask" href="Pic3.html">Basic information of the university</a>
+            </li>
+            <li class="view">
+                <img src="img/Environment.jfif" alt="Intro"/>
+                <a class="mask" href="Pic4.html">Environment of the university</a>
+            </li>
+        </ul>
+    </div>
+        <br>
+        <div class="navigation">
+            <ul>              
+                <li><a id="1935" href="1935.html">1935</a></li>
+                <li><a id="1937" href="1937.html">1937</a></li>
+                <li><a id="1938" href="1938.html">1938</a></li>
+                <li><a id="1939" href="1939-1940.html">1939-1940</a></li>
+                <li><a id="1941" href="1941-1943.html">1941-1943</a></li>
+                <li><a id="1943" href="1943-1945.html">1943-1945</a></li>
+                <li><a id="1946" href="1946.html">1945-1946</a></li>
+                <script>document.getElementById("1943").style.background = 'rgb(45, 87, 252)'</script>
+            </ul>
+        </div>
+        <br>
+        <div class="main" style = "background-image: url(img/1943-1945.png);background-size: 75% 100%;">
+            <button id="Battle" onclick="displayWindowB()"></button>
+            <button id="YunNan" onclick="displayWindowY()"></button>
+            <div id="Battleinfo">
+                Location:Battle Front<br>Strategic counteroffensive stage
+                <button class="close" onclick="hideWindowB()"></button>
+                <br>
+                <p>Through unremitting fight, China was welcoming the dawn of victory...</p>
+            <a class="jump" href="SCS.html">Click to see more</a>
+            </div>
+            <div id="YunNaninfo">
+                Location:YunNan<br>Full of achievements
+                <button class="close" onclick="hideWindowY()"></button>
+                <br>
+                <p>Thanks to the environment, the university can still gave out acadamic contributions during the war...</p>
+                <a class="jump" href="FA.html">Click to see more</a>
+            </div>
+            
+        </div>
+</body>
+</html>

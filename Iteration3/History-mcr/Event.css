@@ -1,0 +1,105 @@
+body{
+    background-color: black;
+}
+h1{
+    color: blue;
+}
+.title{
+    width: 100%;
+    height: 100px;
+    font-size: 72px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    margin-top: 20px; ;
+    overflow-y:scroll;
+    font-size: 20px;
+    position: relative;
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    /* background: url(img/Coming.jfif); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80% 100%; */
+    color: rgb(36, 37, 39);
+}
+
+.content p{
+    margin: 5% 15% 5% 15%;
+    color: aliceblue;
+}
+.content img{
+    width: 40%;
+}
+
+.back{
+    position: relative;
+    left: 10%;
+    top: 50%;
+    width: 35px;
+    height: 35px;
+    background: url(img/R-C.png);
+    background-size:contain ;
+}
+
+
+.menubar{
+    left: 12.5%;
+    width: 75%;
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(172, 128, 69); */
+}
+.menubar ul{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    height: 45px;
+    line-height: 45px;
+    background-color: rgba(149, 141, 133, 0.763);
+}
+.menubar ul li{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 3; 
+    list-style: none;
+    width: 20%;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+.menubar ul li:hover a,
+.menubar ul li a{
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    display: block; 
+}
+.menubar li:hover ul li a:hover,
+.menubar ul li a:hover{
+    height: 100%;
+    
+    background:rgba(182, 225, 220, 0.685);
+    /* color: #000; */
+}
+
+iframe{
+    position: absolute;
+    width: 75%;
+    left: 12.5%;
+    height: 50%;
+}
+@media only screen and (max-width:800px){
+    .title{
+        font-size: 6vh
+    }
+
+}
