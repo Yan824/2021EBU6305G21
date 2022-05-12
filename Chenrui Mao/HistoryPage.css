@@ -1,16 +1,19 @@
+body{
+    margin: 0;
+}
 .menubar{
     margin: 0;
     padding: 0;
-    /* background-color: rgb(172, 128, 69); */
 }
 .menubar ul{
     padding: 0;
     margin: 0;
     position: relative;
     display: flex;
-    height: 45px;
-    line-height: 45px;
+    height: 6vh;
+    line-height: 6vh;
     background-color: rgba(149, 141, 133, 0.763);
+    white-space:nowrap;
 }
 .menubar ul li{
     text-decoration: none;
@@ -35,13 +38,11 @@
 .menubar li:hover ul li a:hover,
 .menubar ul li a:hover{
     height: 100%;
-    
     background:rgba(182, 225, 220, 0.685);
-    /* color: #000; */
 }
 .admin{
     z-index: 1;
-    height: 45px;
+    height: 6vh;
     position: absolute;
     left: 40%;
     top: 0;
@@ -95,7 +96,7 @@
 
 .navigation{
 	width: 100%;
-	height: 35px;
+	height: 50px;
 }
 .navigation ul{
     width: 100%;
@@ -112,7 +113,7 @@
     margin: 0;
     padding: 0;
     width: 14.285714%;
-    height: auto;
+    height: 50px;
 }
 .navigation ul li:hover a,
 .navigation ul li a{
@@ -124,6 +125,7 @@
     float: left;
     text-transform: lowercase;
     color:white;
+    font-size: 2.5vh;
     text-decoration: none;
 }
 .navigation ul li a:hover{
@@ -132,6 +134,7 @@
 }
 
 .figurenav{
+    margin-top: 11vh;
     width: 100%;
 	height: 150px;
 }
@@ -174,13 +177,14 @@
 	height: 100%;
     overflow: hidden;
     opacity: 0;
-    color: rgba(8, 96, 212, 0.551);
+    color:blue;
     font-size: 1.5vw;
     transition: all 0.5s ease-in-out;
     /* background-color: rgb(146, 240, 240); */
     filter: blur();
     z-index: 0;
     text-align: center;
+    font-weight: bold;
 }
 .view:hover .mask{
     opacity: 1;
@@ -343,30 +347,72 @@ button:active{
 button:focus{
  outline:none;
 }
-
+.top{
+    width: 100%;
+    height: 10vh;
+    text-align: left;
+    line-height: 200px;
+    margin: 0 auto;
+}
 .schoolLogo{
     z-index: 3;
     display: block;
+    position: absolute;
     left: 3%;
     top: 9vh;
     background-color: rgba(240, 248, 255, 0.626);
     background: url("img/SchoolLog.png"); 
     background-repeat: no-repeat;
     background-size: contain;
-    width: 80px;
-    height: 80px;
+    width: 10%;
+    height: 20vh;
+    
 }
-
+.schoolName{
+    white-space:nowrap;
+    z-index: 3;
+    padding: 0;
+    margin: 0;
+    top: 10vh;
+    left: 13%;
+    height: 6vh;
+    width: 23%;
+    line-height: 6vh;
+    position: absolute;
+    font-family: "Microsoft Yahei";
+    font-size: 0.8vw;
+    color: rgb(43, 47, 76);
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(240, 248, 255, 0.626);  
+}
 .bottom1{
     z-index: 2;
     padding: 0;
     margin: 0;
-    top: 65px;
-    left: 100px;
-    height: 80px;
-    width: 50%;
+    top: 10vh;
+    left: 13%;
+    height: 16vh;
+    width: 40%;
     background-color: rgba(153, 194, 230, 0.615);
     position: absolute;
+
+}
+.title1{
+    white-space:nowrap;
+    z-index: 3;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 16vh;
+    left: 15%;
+    height: 10vh;
+    width:38%;
+    text-align: center;
+    display: block;
+    background-color: rgba(240, 248, 255, 0.626);
     font-family: "Microsoft Yahei";
+    font-weight: bold;
+    line-height: 10vh;
     font-size: 3vw;
-    }
+}
