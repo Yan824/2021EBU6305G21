@@ -1,5 +1,7 @@
 # 2021EBU6305G21
 ## Group Number: 2021EBU6305G21
+BUPT&QM Interactive Media Design and Production
+交互式媒体设计 课程大作业
 ## Project Title: Webpage of NSAU
 ## Members:
 Xinyue Li, 2019213203, 190898236, Lixinyue2019@bupt.edu.cn, jp2019213203@qmul.ac.uk  
